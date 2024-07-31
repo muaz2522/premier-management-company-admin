@@ -19,7 +19,7 @@ export default function SignUpForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className='grid grid-cols-2 mb-4'>
+      <div className='grid md:grid-cols-2 mb-8 sm:grid-cols-1 custom-min:gap-8 lg:gap-0'>
         <Input
           register={register}
           errors={errors}
@@ -41,68 +41,68 @@ export default function SignUpForm() {
         />
       </div>
 
-      <EmailInput register={register} errors={errors} Icon={Icons.EmailIcon} />
+      <EmailInput register={register} errors={errors} Icon={Icons.EmailIcon} className="mb-8" />
 
-      <div className='grid grid-cols-2 mb-4'>
+      <div className='grid md:grid-cols-2 lg:gap-0 mb-8 custom-min:grid-cols-1 custom-min:gap-8'>
         <PasswordInput register={register} errors={errors} className="w-[49%]" Icon={Icons.PasswordIcon} />
         <ConfirmPasswordInput register={register} errors={errors} className="w-[49%]" Icon={Icons.PasswordIcon} />
       </div>
 
-      <PhoneInput register={register} errors={errors} Icon={Icons.PhoneIcon}  />
+      <PhoneInput register={register} errors={errors} Icon={Icons.PhoneIcon} />
 
-      <div className='grid grid-cols-2 mb-4'>
-      <Input
-        register={register}
-        errors={errors}
-        name="jobTitle"
-        text='Job title is required'
-        placeholder="Job Title"
-        className="mr-3 w-[49%]"
-        Icon={Icons.JobTitleIcon}
-      />
-
-      <Input
-        register={register}
-        errors={errors}
-        name="jobExp"
-        text='Job experience is required'
-        placeholder="Job Experience"
-        className="w-[49%]"
-        Icon={Icons.JobexpIcon}
-      />
-    </div>
-      <Input
-        register={register}
-        errors={errors}
-        name="about"
-        text='About is required'
-        placeholder="About"
-        className="w-full"
-        classDiv="mb-4"
-        Icon={Icons.AboutIcon}
-      />
-
-      <Input
-        register={register}
-        errors={errors}
-        name="cv"
-        text='cv is required'
-        type="file"
-        accept=".pdf,.docx"
-        className="w-full"
-        classDiv="mb-4"
-        Icon={Icons.CvIcon}
-      />
-      <div className='flex'>
+      <div className='grid md:grid-cols-2 lg:gap-0 mb-8 custom-min:grid-cols-1 custom-min:gap-8'>
         <Input
           register={register}
           errors={errors}
-          name="checkbox"
-          text='checkbox is required'
-          type="checkbox"
-          classDiv="mb-10 border-none"
-        /> <span className='ml-2'>I agree to the terms and services.</span>
+          name="jobTitle"
+          text='Job title is required'
+          placeholder="Job Title"
+          className="w-[49%]"
+          classDiv="mr-3"
+          Icon={Icons.JobTitleIcon}
+        />
+        <Input
+          register={register}
+          errors={errors}
+          name="jobExp"
+          text='Job experience is required'
+          placeholder="Job Experience"
+          className="w-[49%]"
+          Icon={Icons.JobexpIcon}
+        />
       </div>
+      <div className='grid grid-cols-1 mb-8'>
+        <Input
+          register={register}
+          errors={errors}
+          name="about"
+          text='About is required'
+          placeholder="About"
+          className="w-full"
+          Icon={Icons.AboutIcon}
+        />
+      </div>
+      <div className='grid grid-cols-1 mb-8'>
+        <Input
+          register={register}
+          errors={errors}
+          name="cv"
+          text='cv is required'
+          type="file"
+          accept=".pdf,.docx"
+          className="w-full border-none text-lime-700"
+          Icon={Icons.CvIcon}
+        />
+      </div>
+
+      <div className='mb-8'>
+        <div className='flex'>
+          <input type="checkbox" {...register("isAgree", { required: "Checkbox is required" })} />
+          <span className='ml-2'>I agree to the terms and services.</span>
+        </div>
+          {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
+      </div>
+
 
       <Button type="submit" className="py-2 px-4">Sign Up</Button>
     </form>

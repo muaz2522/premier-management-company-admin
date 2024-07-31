@@ -17,67 +17,13 @@
     --color-main: #858697;
     /* main bg color */
     --bg-base:#E5E7F8;
-    --bg-sky: #A0D1FF;
+    --bg-sky: #A0D1FF; 
     --bg-main:#0F0F0F;
 
-
-
-
-    --color-slate-100: rgb(241, 245, 249);
-    --color-slate-200: rgb(226, 232, 240);
-    --color-slate-300: rgb(203, 213, 225);
-    --color-slate-400: rgb(148, 163, 184);
-    --color-slate-500: rgb(100, 116, 139);
-    --color-slate-600: rgb(71, 85, 105);
-    --color-slate-700: rgb(51, 65, 85);
-    --color-slate-800: rgb(30, 41, 59);
-    --color-slate-900: rgb(15, 23, 42);
-    --color-slate-950: rgb(2, 6, 23);
-   
-    --color-zinc-400: rgb(168, 162, 158);
-    --color-zinc-800: rgb(39, 39, 42);
-    --color-zinc-900: rgb(24, 24, 27);
-    --color-zinc-950: rgb(9, 9, 11);
-  
-    --color-neutral-800: rgb(38, 38, 38);
-    --color-neutral-900: rgb(23, 23, 23);
-  
-    --color-stone-800: rgb(41, 37, 36);
-    --color-stone-900: rgb(28, 25, 23);
-  
-    --color-lime-500: rgb(132, 204, 22);
-    --color-lime-600: rgb(101, 163, 13);
-  
-    --color-grey-0: #fff;
-    --color-grey-50: #f9fafb;
-    --color-grey-100: #f3f4f6;
-    --color-grey-200: #e5e7eb;
-    --color-grey-300: #d1d5db;
-    --color-grey-400: #9ca3af;
-    --color-grey-500: #6b7280;
-    --color-grey-600: #4b5563;
-    --color-grey-700: #374151;
-    --color-grey-800: #1f2937;
-    --color-grey-900: #111827;
-  
-    --color-blue-100: #e0f2fe;
-    --color-blue-700: #0369a1;
-  
-    --color-green-100: #dcfce7;
-    --color-green-700: #15803d;
-  
-    --color-yellow-100: #fef9c3;
-    --color-yellow-700: #a16207;
-  
-    --color-silver-100: #e5e7eb;
-    --color-silver-700: #374151;
-  
-    --color-indigo-100: #e0e7ff;
-    --color-indigo-700: #433
 }
 
 html {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   input,
@@ -130,3 +76,79 @@ html {
   img {
     max-width: 100%;
   }
+
+.triangle-right-angle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #383C6C; /* Your desired color */
+  border-left: 100px solid transparent;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+
+/* index.css or custom.css */
+.footer-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* index.css or custom.css */
+/* .footer-section {
+  position: relative;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 300px;
+  width: 40px;
+  height: 100%;
+  } */
+
+  .footer-section1 {
+    position: absolute;
+    top: -25px;
+    right: 250px;
+    width: 50px;
+    height: 120%;
+    background-color: rgba(229, 231, 248,0.2);
+    transform: rotate(25deg);
+}
+
+.footer-section2 {
+  position: absolute;
+  top: -25px;
+  right: 150px;
+  width: 50px;
+  height: 120%;
+  background-color: rgba(229, 231, 248,0.2);
+  transform: rotate(25deg);
+}
+.footer-section3 {
+  position: absolute;
+  top: -25px;
+  right: 50px;
+  width: 50px;
+  height: 120%;
+  background-color: rgba(229, 231, 248,0.2);
+  transform: rotate(25deg);
+}
+/* .footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 300px;
+  width: 120px; /* 3 * 40px */
+  /* height: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(229, 231, 248, 0.2),
+    rgba(229, 231, 248, 0.2) 40px,
+    transparent 40px,
+    transparent 80px
+  ); */
+/* } */ 
+

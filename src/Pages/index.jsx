@@ -1,7 +1,7 @@
 function Home() {
     return (
-        <div>
-            Home
+        <div className="relative w-full h-screen">
+            <div className="triangle-right-angle"></div>
         </div>
     )
 }
