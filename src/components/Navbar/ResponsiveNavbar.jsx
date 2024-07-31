@@ -1,5 +1,5 @@
 import Menu from '../login/Menu';
-import NavButton from '../Navbar/NavButton';
+import NavButton from './NavButton';
 import { Offcanvas, OffcanvasBody, OffcanvasHeader } from "reactstrap";
 
 export default function ResponsiveNavbar({ isOpen, setIsOpen }) {

@@ -24,6 +24,10 @@ html {
     font-size: 12px;
 }
 
+a {
+    color: var(--bg-base);
+}
+
 input,
 textarea,
 select {
