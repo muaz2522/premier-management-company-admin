@@ -5,9 +5,9 @@ import * as Icons from '../assets/icons';
 function Footer() {
     return (
         <section className='bg-base-color relative'>
-            <div className="footer-section1"></div>
-            <div className="footer-section2"></div>
-            <div className="footer-section3"></div>
+            <div className="footer-section1 hidden custom-min:hidden sm:block"></div>
+            <div className="footer-section2 hidden custom-min:hidden sm:block"></div>
+            <div className="footer-section3 hidden custom-min:hidden sm:block"></div>
 
             <div className='py-4 px-16'>
                 <div className='border-b border-gray-300 pb-4 text-base text-footer-color custom-min:grid-cols-1 custom-md:grid-cols-2 custom-min:place-items-center custom-md:place-items-start grid md:grid-cols-4 gap-4'>

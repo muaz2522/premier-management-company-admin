@@ -8,7 +8,7 @@ function ContactUs() {
     return (
         <section className="pt-8">
             <h2 className="text-4xl font-semibold text-center mb-8">Get in Touch</h2>
-            <div className="flex md:justify-around md:flex-row custom-min:flex-col custom-min:gap-8 md:gap-0 items-center h-full sm:p-8 custom-min:p-16 bg-ground">
+            <div className="flex md:justify-around md:flex-row custom-min:flex-col custom-min:gap-8 md:gap-0 items-center h-full sm:p-8 custom-min:p-16 bg-ground-color">
                 <div>
                     <h3 className="text-xl font-semibold">Contact Us</h3>
                     <h1 className="md:text-6xl sm:text-4xl custom-min:text-3xl my-4">Have questions? <br /> Get in touch!</h1>
@@ -68,7 +68,7 @@ function ContactForm() {
                 </div>
                 {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
             </div>
-            <Button type="submit" className="py-2 px-4">Sign In</Button>
+            <Button type="submit" className="py-2 px-4">Contact Us</Button>
         </form>
     );
 }

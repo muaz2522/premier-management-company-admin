@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
 export const PasswordIcon = ({ width = "16px", height = "12px" }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,6 +102,16 @@ export const EmailIFill = ({ width = "16px", height = "12px" }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.7525 0H38.2475C41.4074 0 43 1.475 43 4.475V25.525C43 28.5 41.4074 30 38.2475 30H4.7525C1.59259 30 0 28.5 0 25.525V4.475C0 1.475 1.59259 0 4.7525 0ZM21.4874 21.5L38.5256 7.675C39.1323 7.175 39.6126 6.025 38.8542 5C38.1211 3.975 36.7813 3.95 35.8965 4.575L21.4874 14.225L7.10347 4.575C6.2187 3.95 4.8789 3.975 4.1458 5C3.38742 6.025 3.86772 7.175 4.47443 7.675L21.4874 21.5Z" fill="#A0D1FF" />
+        </svg>
+
+    );
+}
+
+export const ClickIcon = ({ width = "16px", height = "12px" }) => {
+    return (
+        <svg width={width} height={height} viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 22.5C6 18.1239 7.73839 13.9271 10.8327 10.8327C13.9271 7.73839 18.1239 6 22.5 6C26.8761 6 31.0729 7.73839 34.1673 10.8327C37.2616 13.9271 39 18.1239 39 22.5C39 26.8761 37.2616 31.0729 34.1673 34.1673C31.0729 37.2616 26.8761 39 22.5 39C18.1239 39 13.9271 37.2616 10.8327 34.1673C7.73839 31.0729 6 26.8761 6 22.5ZM21.5584 29.562L31.058 17.6864L29.342 16.3136L21.2416 26.4358L15.504 21.6552L14.096 23.3448L21.5584 29.562Z" fill="white" />
+            <circle cx="22.5" cy="22.5" r="21" stroke="white" stroke-width="3" />
         </svg>
 
     );

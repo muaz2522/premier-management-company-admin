@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-*{
+* {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin: 0;
@@ -16,133 +15,131 @@
     --color-base: #383C6C;
     --color-main: #858697;
     /* main bg color */
-    --bg-base:#E5E7F8;
-    --bg-sky: #A0D1FF; 
-    --bg-main:#0F0F0F;
-
+    --bg-base: #E5E7F8;
+    --bg-sky: #A0D1FF;
+    --bg-main: #0F0F0F;
 }
 
 html {
     font-size: 12px;
-  }
+}
 
-  input,
-  textarea,
-  select {
+input,
+textarea,
+select {
     font: inherit;
-  }
+}
 
-  button {
+button {
     cursor: pointer;
-  }
+}
 
-  *:disabled {
+*:disabled {
     cursor: not-allowed;
-  }
+}
 
-  select:disabled,
-  input:disabled {
+select:disabled,
+input:disabled {
     background-color: var(--color-grey-200);
     color: var(--color-grey-500);
-  }
+}
 
-  input:focus,
-  button:focus,
-  textarea:focus,
-  select:focus {
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
     outline-offset: -1px;
-  }
+}
 
-  a {
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  ul {
+ul {
     list-style: none;
-  }
+}
 
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
     hyphens: auto;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
-  }
+}
 
 .triangle-right-angle {
-  width: 0;
-  height: 0;
-  border-top: 100px solid #383C6C; /* Your desired color */
-  border-left: 100px solid transparent;
-  position: absolute;
-  top: 50px;
-  left: 50px;
+    width: 0;
+    height: 0;
+    border-top: 250px solid transparent;
+    border-left: calc(1000 * (100vw / 1030)) solid #F1F2FF;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+}
+
+@media (max-width: 600px) {
+    .triangle-right-angle {
+        border-top: 150px solid transparent;
+        /* Adjust the width */
+    }
 }
 
 
 /* index.css or custom.css */
+
 .footer-section {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
-/* index.css or custom.css */
-/* .footer-section {
-  position: relative;
-}
-
-.footer-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 300px;
-  width: 40px;
-  height: 100%;
-  } */
-
-  .footer-section1 {
+.footer-section1 {
     position: absolute;
     top: -25px;
     right: 250px;
     width: 50px;
     height: 120%;
-    background-color: rgba(229, 231, 248,0.2);
+    background-color: rgba(229, 231, 248, 0.2);
     transform: rotate(25deg);
 }
 
 .footer-section2 {
-  position: absolute;
-  top: -25px;
-  right: 150px;
-  width: 50px;
-  height: 120%;
-  background-color: rgba(229, 231, 248,0.2);
-  transform: rotate(25deg);
+    position: absolute;
+    top: -25px;
+    right: 150px;
+    width: 50px;
+    height: 120%;
+    background-color: rgba(229, 231, 248, 0.2);
+    transform: rotate(25deg);
 }
+
 .footer-section3 {
-  position: absolute;
-  top: -25px;
-  right: 50px;
-  width: 50px;
-  height: 120%;
-  background-color: rgba(229, 231, 248,0.2);
-  transform: rotate(25deg);
+    position: absolute;
+    top: -25px;
+    right: 70px;
+    width: 50px;
+    height: 120%;
+    background-color: rgba(229, 231, 248, 0.2);
+    transform: rotate(25deg);
 }
+
+
 /* .footer-section::before {
   content: "";
   position: absolute;
   top: 0;
   right: 300px;
   width: 120px; /* 3 * 40px */
-  /* height: 100%;
+
+
+/* height: 100%;
   background: repeating-linear-gradient(
     to right,
     rgba(229, 231, 248, 0.2),
@@ -150,5 +147,6 @@ html {
     transparent 40px,
     transparent 80px
   ); */
-/* } */ 
 
+
+/* } */
