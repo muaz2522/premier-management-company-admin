@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar/NavBar";
-import ResponsiveNavbar from "../components/Responsive/ResponsiveNavbar";
+import ResponsiveNavbar from "../components/Navbar/ResponsiveNavbar";
+
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
