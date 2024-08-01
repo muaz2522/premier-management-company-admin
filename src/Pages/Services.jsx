@@ -1,8 +1,8 @@
+import Service from "../components/services"
+
 function Services() {
     return (
-        <div>
-            Services
-        </div>
+        <Service />
     )
 }
 

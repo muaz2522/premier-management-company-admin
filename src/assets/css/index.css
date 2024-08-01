@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Colona MT';
+    src: url('/fonts/ColonaMT.woff2') format('woff2'), url('/fonts/ColonaMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --color-category: #40a829;
     /* base color */
@@ -22,10 +29,6 @@
 
 html {
     font-size: 12px;
-}
-
-a {
-    color: var(--bg-base);
 }
 
 input,
