@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import src from '@/assets/images/main-app-img-white.png';
-import * as Icons from '@/assets/icons';
+import src from '../assets/images/main-app-img-white.png';
+import * as Icons from '../assets/icons';
 
 function Footer() {
     return (

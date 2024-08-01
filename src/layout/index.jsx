@@ -5,11 +5,11 @@ import Footer from "./Footer"
 function AppLayout() {
     return (
         <section>
-            <Header/>
+            <Header />
             <main>
-                <Outlet/>
+                <Outlet />
             </main>
-            <Footer/>
+            <Footer />
         </section>
     )
 }
