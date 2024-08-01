@@ -1,4 +1,4 @@
-import Service from "../components/services"
+import Service from "@/components/services"
 
 function Services() {
     return (

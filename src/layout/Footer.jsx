@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import src from '../assets/images/main-app-img-white.png';
-import * as Icons from '../assets/icons';
+import src from '@/assets/images/main-app-img-white.png';
+import * as Icons from '@/assets/icons';
 
 function Footer() {
     return (
@@ -15,14 +15,14 @@ function Footer() {
                         <img src={src} alt="Premier" className='md:max-w-[80%] custom-min:w-[50%] custom-md:w-[60%]' />
                         <div className="flex flex-col gap-4">
 
-                        <p className='grid grid-cols-[20px_1fr]'>
-                            <span>{Icons.Arrow && <Icons.Telephone />}</span>
-                            <span>+1 324536467685</span>
-                        </p>
-                        <p className='grid grid-cols-[20px_1fr] '>
-                            <span>{Icons.Arrow && <Icons.EmailIFill className="mr-2" />}</span>
-                            <span>Support@premier.com</span>
-                        </p>
+                            <p className='grid grid-cols-[20px_1fr]'>
+                                <span>{Icons.Arrow && <Icons.Telephone />}</span>
+                                <span>+1 324536467685</span>
+                            </p>
+                            <p className='grid grid-cols-[20px_1fr] '>
+                                <span>{Icons.Arrow && <Icons.EmailIFill className="mr-2" />}</span>
+                                <span>Support@premier.com</span>
+                            </p>
                         </div>
                     </div>
                     <div className='flex flex-col custom-min:items-center custom-md:items-start'>
@@ -38,13 +38,13 @@ function Footer() {
                             <Link className='hover:underline hover:text-inherit' to="/">Home</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">Services</Link></span>
+                            <Link className='hover:underline hover:text-inherit' to="services">Services</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">About Us</Link></span>
+                            <Link className='hover:underline hover:text-inherit' to="about">About Us</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">Get In Touch</Link></span>
+                            <Link className='hover:underline hover:text-inherit' to="contact">Get In Touch</Link></span>
                     </div>
                     <div className='flex flex-col custom-min:gap-2 sm:gap-4'>
                         <h2 className='text-3xl sm:mb-1 md:mb-4 text-white'>Other Pages</h2>

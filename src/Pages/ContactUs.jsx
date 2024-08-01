@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
-import Input from '../ui/form/Input';
-import EmailInput from '../ui/form/EmailInput';
-import Button from '../ui/Button';
-import * as Icons from '../assets/icons';
+import Input from '@/ui/form/Input';
+import EmailInput from '@/ui/form/EmailInput';
+import Button from '@/ui/Button';
+import * as Icons from '@/assets/icons';
 
 function ContactUs() {
     return (
@@ -23,7 +23,7 @@ function ContactUs() {
                 </div>
                 <div className="px-[20px] py-[30px] rounded bg-white">
                     <h3 className="text-2xl mb-4">Contact Form</h3>
-                <ContactForm />
+                    <ContactForm />
                 </div>
             </div>
         </section>
@@ -46,10 +46,9 @@ function ContactForm() {
                 text="Name is required"
                 placeholder="Name"
                 className="w-full"
-                classDiv="mb-8"
                 Icon={Icons.NameIcon}
             />
-            <EmailInput register={register} errors={errors} className="mb-8" Icon={Icons.EmailIcon} />
+            <EmailInput register={register} errors={errors} className="my-8" Icon={Icons.EmailIcon} />
 
             <Input
                 register={register}
@@ -58,10 +57,9 @@ function ContactForm() {
                 text="help is required"
                 placeholder="How we can help you? Feel free to get in touch"
                 className="w-full"
-                classDiv="mb-8"
                 Icon={Icons.EditIcon}
             />
-            <div className='mb-8'>
+            <div className='my-8'>
                 <div className='flex'>
                     <input type="checkbox" {...register("isAgree", { required: "Checkbox is required" })} />
                     <span className='ml-2'>I agree that my submitted data is being collected and stored.</span>

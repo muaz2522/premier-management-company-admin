@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '../ui/form/Input';
-import EmailInput from '../ui/form/EmailInput';
-import { PasswordInput, ConfirmPasswordInput } from '../ui/form/PasswordInput';
-import PhoneInput from '../ui/form/PhoneInput';
-import Button from '../ui/Button';
-import * as Icons from '../assets/icons';
+import Input from '../../ui/form/Input';
+import EmailInput from '../../ui/form/EmailInput';
+import { PasswordInput, ConfirmPasswordInput } from '../../ui/form/PasswordInput';
+import PhoneInput from '../../ui/form/PhoneInput';
+import Button from '../../ui/Button';
+import * as Icons from '../../assets/icons';
 
 
 export default function SignUpForm() {
@@ -100,7 +100,7 @@ export default function SignUpForm() {
           <input type="checkbox" {...register("isAgree", { required: "Checkbox is required" })} />
           <span className='ml-2'>I agree to the terms and services.</span>
         </div>
-          {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
+        {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
       </div>
 
 

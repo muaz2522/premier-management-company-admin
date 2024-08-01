@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import EmailInput from "../../ui/form/EmailInput";
-import Button from "../../ui/Button";
-import * as Icons from '../../assets/icons';
+import EmailInput from "@/ui/form/EmailInput";
+import Button from "@/ui/Button";
+import * as Icons from '@/assets/icons';
 
 function Forgot() {
   return (

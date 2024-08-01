@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import Button from "../../ui/Button";
-import * as Icons from '../../assets/icons';
-import PhoneInput from "../../ui/form/PhoneInput";
+import Button from "@/ui/Button";
+import * as Icons from '@/assets/icons';
+import PhoneInput from "@/ui/form/PhoneInput";
 
 function Verification() {
   return (

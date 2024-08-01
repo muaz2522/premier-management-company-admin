@@ -1,17 +1,17 @@
-import { serviceMethod1, serviceMethod2 } from "../../assets/images/services"
-import { InnerAlignmentIcon } from '../../assets/icons';
+import { serviceMethod1, serviceMethod2 } from "@/assets/images/services"
+import { InnerAlignmentIcon } from '@/assets/icons'
 
 function ServiceMethod() {
     return (
-        <section className="grid grid-cols-3 gap-4 py-16 px-32 bg-gradient-to-t from-white to-ground-color">
-            <div className="flex items-end">
+        <section className="grid lg:grid-cols-3 md:grid-cols-1 gap-4 py-16 px-32 bg-gradient-to-t from-white to-ground-color">
+            <div className="lg:flex items-end custom-min:hidden ">
                 <img src={serviceMethod1} alt="service Method" className="w-[80%]" />
             </div>
-            <div className="flex items-end">
+            <div className="lg:flex items-end custom-min:hidden">
                 <img src={serviceMethod2} alt="service Method" className="w-[80%]" />
             </div>
             <div className="flex flex-col">
-                <h3 className="text-base-color text-2xl p-4">About Our Methods</h3>
+                <h3 className="text-base-color text-2xl py-4">About Our Methods</h3>
                 <h1 className="text-5xl font-semibold pb-4">Manage Business Ensure Success</h1>
                 <p>Lorem, ipsum dolor sit amet odit reprehenderit quos omnis.</p>
                 <div className="py-8 flex flex-col gap-4 text-text-color">

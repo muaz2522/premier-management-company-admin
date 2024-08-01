@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import Button from "../../ui/Button";
-import * as Icons from '../../assets/icons';
-import { ConfirmPasswordInput, PasswordInput } from "../../ui/form/PasswordInput";
+import Button from "@/ui/Button";
+import * as Icons from '@/assets/icons';
+import { ConfirmPasswordInput, PasswordInput } from "@/ui/form/PasswordInput";
 
 function Reset() {
     return (

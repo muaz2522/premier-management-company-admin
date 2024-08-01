@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import EmailInput from "../../ui/form/EmailInput";
-import Button from "../../ui/Button";
-import * as Icons from '../../assets/icons';
+import EmailInput from "@/ui/form/EmailInput";
+import Button from "@/ui/Button";
+import * as Icons from '@/assets/icons';
 
 function Forgot() {
   return (
@@ -20,18 +20,18 @@ function Forgot() {
 export default Forgot
 
 
-function ForgotForm(){
-    const { register, handleSubmit, formState: { errors } } = useForm();
+function ForgotForm() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const onSubmit = (data) => {
-      console.log(data);
-    };
-  
-    return(
-        <form onSubmit={handleSubmit(onSubmit)} className="mb-8">
-        <EmailInput register={register} errors={errors} className="mb-8" Icon={Icons.EmailIcon}/>
-         
-        <Button type="submit" className="py-2 px-4">Sign In</Button>
-      </form>
-    );
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="mb-8">
+      <EmailInput register={register} errors={errors} className="mb-8" Icon={Icons.EmailIcon} />
+
+      <Button type="submit" className="py-2 px-4">Sign In</Button>
+    </form>
+  );
 }
