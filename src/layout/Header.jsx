@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Navbar from "@/components/navbar/NavBar";
-import ResponsiveNavbar from "@/components/navbar/ResponsiveNavbar";
+import Navbar from "../components/navbar/NavBar";
+import ResponsiveNavbar from "../components/navbar/ResponsiveNavbar";
 
 
 function Header() {

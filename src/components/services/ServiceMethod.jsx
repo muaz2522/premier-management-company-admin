@@ -1,5 +1,5 @@
-import { serviceMethod1, serviceMethod2 } from "@/assets/images/services"
-import { InnerAlignmentIcon } from '@/assets/icons'
+import { serviceMethod1, serviceMethod2 } from "../../assets/images/services"
+import { InnerAlignmentIcon } from '../../assets/icons'
 
 function ServiceMethod() {
     return (

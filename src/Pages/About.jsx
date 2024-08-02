@@ -1,6 +1,6 @@
 import { ClickIcon } from '../assets/icons';
-import src from '@/assets/images/about-img-2.png';
-import ButtonLink from '@/ui/ButtonLink';
+import src from '../assets/images/about-img-2.png';
+import ButtonLink from '../ui/ButtonLink';
 
 function About() {
     return (

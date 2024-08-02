@@ -1,4 +1,4 @@
-import src from '@/assets/images/main-app-img.png';
+import src from '../../assets/images/main-app-img.png';
 import Menu from "../login/Menu";
 import NavButton from "./NavButton";
 import { IoMenu } from "react-icons/io5";
