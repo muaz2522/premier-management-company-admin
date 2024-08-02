@@ -18,6 +18,8 @@ export default {
                 'footer-color': "#DEEFFF",
                 'core-color': "#F1F2FF",
                 'special-color': "#ABADC1",
+                'dashboard-para': "#9D9D9D",
+                'dashboard-color': "#E0E1F4",
 
             },
             fontFamily: {

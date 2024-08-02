@@ -57,7 +57,7 @@ export default function SignUpForm() {
           name="jobTitle"
           text='Job title is required'
           placeholder="Job Title"
-          className="w-[49%]"
+          className="w-full"
           classDiv="mr-3"
           Icon={Icons.JobTitleIcon}
         />
@@ -67,7 +67,7 @@ export default function SignUpForm() {
           name="jobExp"
           text='Job experience is required'
           placeholder="Job Experience"
-          className="w-[49%]"
+          className="w-full"
           Icon={Icons.JobexpIcon}
         />
       </div>

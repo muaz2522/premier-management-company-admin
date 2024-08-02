@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmailInput = ({ register, errors, Icon, className }) => {
+const EmailInput = ({ register, errors, Icon, className, color }) => {
   return (
     <div className={`${className ? className : "mb-4"}`}>
       <div className="flex border-b border-gray-300">
@@ -15,7 +15,7 @@ const EmailInput = ({ register, errors, Icon, className }) => {
               message: 'Invalid email address'
             }
           })}
-          className="text-base outline-none w-full pl-3"
+          className={`text-base outline-none w-full pl-3 ${color}`}
           placeholder="Email"
         />
       </div>

@@ -9,6 +9,10 @@ import Forgot from "../components/login/Forgot";
 import Verification from "../components/login/VerificationCode";
 import Reset from "../components/login/ResetPassword";
 import ContactUs from "../Pages/ContactUs";
+import DashboardLayout from '../dashboard/layout';
+import Dashboard from '../dashboard/pages';
+import EditProfile from '../dashboard/pages/EditProfile';
+import Account from "../dashboard/pages/Account";
 
 const routes = [
   {
@@ -50,6 +54,23 @@ const routes = [
       {
         path: "contact",
         element: <ContactUs />,
+      },
+    ]
+  }, {
+    path: '/dashboard',
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard />
+      },
+      {
+        path: "/dashboard/profile",
+        element: <Account />,
+      },
+      {
+        path: "/dashboard/edit-profile",
+        element: <EditProfile />,
       },
     ]
   }
