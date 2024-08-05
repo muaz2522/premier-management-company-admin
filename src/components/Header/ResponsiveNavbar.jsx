@@ -6,7 +6,7 @@ export default function ResponsiveNavbar({ isOpen, setIsOpen }) {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <div>
-            <Offcanvas className="custom-min:!w-[45%] custom-md:!w-[55%]" zIndex={500} direction={"end"} isOpen={isOpen} scrollable
+            <Offcanvas className="custom-min:!w-[45%]" zIndex={500} direction={"end"} isOpen={isOpen} scrollable
                 ={true} backdrop={false} onClick={toggle}>
                 <OffcanvasHeader toggle={toggle}>
                     {/* Offcanvas */}
