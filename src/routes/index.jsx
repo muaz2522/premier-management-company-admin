@@ -72,19 +72,20 @@ const routes = [
     element: <DashboardLayout />,
     children: [
       {
-        path: "dashboard",
+        path: "",
         element: <Dashboard />
       },
       {
-        path: "dashboard/profile",
+        path: "profile",
         element: <Account />,
       },
       {
-        path: "dashboard/edit-profile",
+        path: "edit-profile",
         element: <EditProfile />,
       },
     ]
   }
+  
 ]
 
 const router = createBrowserRouter(routes);
