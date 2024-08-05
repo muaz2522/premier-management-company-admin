@@ -43,6 +43,7 @@ select {
 
 a:active {
     color: #0F0F0F;
+    /* text-decoration: underline !important; */
 }
 
 menu a,
