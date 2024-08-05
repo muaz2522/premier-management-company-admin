@@ -16,71 +16,71 @@ import Account from "../dashboard/pages/Account";
 import LoginLayout from "../layout/LoginLayout";
 
 const routes = [
-  // {
-  //   path: "/",
-  //   element: <AppLayout />,
-  //   //   errorElement: ErrorPage,
-  //   children: [
-  //     {
-  //       path: "/",
-  //       element: <Home />,
-  //     },
-  //     {
-  //       path: "services",
-  //       element: <Services />,
-  //     },
-  //     {
-  //       path: "about",
-  //       element: <About />,
-  //     },
-
-  //     {
-  //       path: "contact",
-  //       element: <ContactUs />,
-  //     },
-  //   ]
-  // },
-  // {
-  //   path: "/",
-  //   element: <LoginLayout />,
-  //   //   errorElement: ErrorPage,
-  //   children: [
-  //     {
-  //       path: "login",
-  //       element: <Login />,
-  //     },
-  //     {
-  //       path: "signUp",
-  //       element: <SignUp />,
-  //     },
-  //     {
-  //       path: "forgot",
-  //       element: <Forgot />,
-  //     },
-  //     {
-  //       path: "verify",
-  //       element: <Verification />,
-  //     },
-  //     {
-  //       path: "reset",
-  //       element: <Reset />,
-  //     },
-  //   ]
-  // },
   {
-    path: 'home',
+    path: "/",
+    element: <AppLayout />,
+    //   errorElement: ErrorPage,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+
+      {
+        path: "contact",
+        element: <ContactUs />,
+      },
+    ]
+  },
+  {
+    path: "/home",
+    element: <LoginLayout />,
+    //   errorElement: ErrorPage,
+    children: [
+      {
+        path: "home/login",
+        element: <Login />,
+      },
+      {
+        path: "home/signUp",
+        element: <SignUp />,
+      },
+      {
+        path: "home/forgot",
+        element: <Forgot />,
+      },
+      {
+        path: "home/verify",
+        element: <Verification />,
+      },
+      {
+        path: "home/reset",
+        element: <Reset />,
+      },
+    ]
+  },
+  {
+    path: '/dashboard',
     element: <DashboardLayout />,
     children: [
       {
-        path: "home",
+        path: "dashboard",
         element: <Dashboard />
       },
       {
-        path: "home/profile",
+        path: "dashboard/profile",
         element: <Account />,
       },
       {
-        path: "home/edit-profile",
+        path: "dashboard/edit-profile",
         element: <EditProfile />,
       },
     ]
