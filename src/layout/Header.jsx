@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-// import Navbar from "../components/navbar/NavBar";
-import ResponsiveNavbar from "../components/navbar/ResponsiveNavbar";
+import Navbar from "../components/Header/NavBar";
+import ResponsiveNavbar from "../components/Header/ResponsiveNavbar";
 
 
 function Header() {
@@ -21,7 +21,7 @@ function Header() {
     return (
         <>
             {/* <ResponsiveNavbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-            {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+            <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
             {isOpen ? <ResponsiveNavbar isOpen={isOpen} setIsOpen={setIsOpen} /> : ""}
 
         </>
