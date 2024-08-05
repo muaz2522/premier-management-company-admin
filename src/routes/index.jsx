@@ -68,19 +68,19 @@ const routes = [
   //   ]
   // },
   {
-    path: '/',
+    path: '/dashboard',
     element: <DashboardLayout />,
     children: [
       {
-        path: "/",
+        path: "/dashboard",
         element: <Dashboard />
       },
       {
-        path: "/home/profile",
+        path: "/dashboard/profile",
         element: <Account />,
       },
       {
-        path: "/home/edit-profile",
+        path: "/dashboard/edit-profile",
         element: <EditProfile />,
       },
     ]
