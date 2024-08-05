@@ -21,8 +21,8 @@ function Link({ className, isOpen }) {
                     <NavLink to="/dashboard/profile" className={({ isActive }) => `text-black hover:text-black ${isActive ? "!text-slate-300" : ""}`}>My Account</NavLink>
                     </div>
                     <div className="ml-10 flex flex-col gap-3">
-                    <NavLink to="/dashboard/edit-profile" className="w-max text-center">Edit Profile</NavLink>
-                    <NavLink className="w-max text-center">Change Password</NavLink>
+                    <NavLink to="/dashboard/edit-profile" className="w-max !text-black hover:text-black text-center">Edit Profile</NavLink>
+                    <NavLink className="w-max !text-black hover:text-black text-center">Change Password</NavLink>
                     </div>
                 </div> : <NavLink to="/dashboard/profile" className={({ isActive }) => `text-black hover:text-black ${isActive ? "!text-slate-300" : ""}`}>My Account</NavLink>}
             </div>
