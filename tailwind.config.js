@@ -12,6 +12,7 @@ export default {
             },
             colors: {
                 'base-color': '#383C6C',
+                'nav-color': "#0F0F0F",
                 'text-color': '#858697',
                 'ground': "#E5E7F8",
                 'ground-color': '#F7F8FF',

@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom"
 
 function Menu() {
     return (
-        <menu className="flex  sm:gap-4 md:gap-12 custom-min:flex-col sm:flex-row custom-min:gap-4 custom-min:items-center">
+        <menu className="flex sm:gap-4 md:gap-12 custom-min:flex-col sm:flex-row custom-min:gap-4  custom-min:items-center">
           <NavLink
             className={({ isActive }) =>
-              `hover:text-stone-700 ${isActive ? "underline-offset-1 underline" : ""}`
+              `hover:text-stone-700 text-nav-color ${isActive ? "underline-offset-1 underline" : ""}`
             }
             to="/"
           >
@@ -14,7 +14,7 @@ function Menu() {
 
           <NavLink
             className={({ isActive }) =>
-              `hover:text-stone-700 ${isActive ? "underline-offset-1 underline" : ""}`
+              `hover:text-stone-700 text-nav-color ${isActive ? "underline-offset-1 underline" : ""}`
             }
             to="/services"
           >
@@ -22,7 +22,7 @@ function Menu() {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `hover:text-stone-700 ${isActive ? "underline-offset-1 underline" : ""}`
+              `hover:text-stone-700  text-nav-color${isActive ? "underline-offset-1 underline" : ""}`
             }
             to="/about"
           >
