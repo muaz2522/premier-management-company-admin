@@ -37,7 +37,7 @@ function About() {
                 <h3 className='custom-min:2xl custom-md:text-3xl sm:text-4xl font-semibold absolute top-[25%] custom-min:left-[30%] md:left-[40%] mb-8'>Believe us when its come to <br /> Consultant & Management</h3>
                 <div>
                     <img src={src} alt="Image" className='custom-min:w-[15%] custom-md:w-[10%] sm:w-[10%] absolute bottom-0 left-[50%] custom-min:left-[40%]' />
-                    <ButtonLink link="/contact" text="Get in Touch" className="absolute custom-min:bottom-4 sm:bottom-12 custom-min:left-[60%] sm:left-[55%] custom-min:px-2 custom-min:py-1 sm:py-2 sm:px-3" />
+                    <ButtonLink link="/contact" text="Get in Touch" className="absolute custom-min:bottom-4 sm:bottom-12 custom-min:left-[60%] sm:left-[55%] custom-min:px-2 custom-min:py-1 sm:py-2 sm:px-3" classLink="hover:text-footer-color text-white" />
                 </div>
             </div>
         </section>

@@ -9,7 +9,7 @@ function Login() {
           <h3 className='text-3xl font-semibold mb-4' style={{ color: "var(--bg-main)" }}>Information about<br />  Premier Management Consultant</h3>
           <p className='mb-3 text-base leading-8' style={{ color: "var(--color-main)" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sequi amet cupiditate, quis et beatae necessitatibus eos illum, labore alias inventore explicabo a doloribus architecto, fugit esse! Harum, enim error?
             Doloremque voluptas lorum ut aspernatur vitae quibusdam natus porro voluptatem facilis provident at! Vel sapiente nulla suscipit dolorum aliquid sis!</p>
-          <ButtonLink link="/signUp" text="Create Account" className="py-2 px-4" />
+          <ButtonLink link="/signUp" text="Create Account" className="py-2 px-4" classLink="hover:text-footer-color text-white" />
         </div>
 
         <div className="px-8 py-12 rounded bg-white custom-min:w-full custom-md:w-3/5 sm:w-3/5 md:w-3/4 lg:w-2/4">
