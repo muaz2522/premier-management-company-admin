@@ -41,28 +41,28 @@ const routes = [
     ]
   },
   {
-    path: "/home",
+    path: "/",
     element: <LoginLayout />,
     //   errorElement: ErrorPage,
     children: [
       {
-        path: "home/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "home/signUp",
+        path: "signUp",
         element: <SignUp />,
       },
       {
-        path: "home/forgot",
+        path: "forgot",
         element: <Forgot />,
       },
       {
-        path: "home/verify",
+        path: "verify",
         element: <Verification />,
       },
       {
-        path: "home/reset",
+        path: "reset",
         element: <Reset />,
       },
     ]
