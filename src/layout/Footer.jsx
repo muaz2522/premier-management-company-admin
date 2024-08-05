@@ -4,7 +4,7 @@ import * as Icons from '../assets/icons';
 
 function Footer() {
     return (
-        <section className='bg-base-color relative md:h-[240px] md:truncate'>
+        <footer className='bg-base-color relative md:h-[240px] md:truncate'>
             <div>
                 <div className="footer-section1 hidden custom-min:hidden md:block"></div>
                 <div className="footer-section2 hidden custom-min:hidden md:block"></div>
@@ -36,28 +36,28 @@ function Footer() {
                         <h2 className='text-3xl custom-min:mb-1 md:mb-4 text-white'>Other Pages</h2>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">Home</Link></span>
+                            <Link className='hover:underline' to="/">Home</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="services">Services</Link></span>
+                            <Link className='hover:underline' to="services">Services</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="about">About Us</Link></span>
+                            <Link className='hover:underline ' to="about">About Us</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="contact">Get In Touch</Link></span>
+                            <Link className='hover:underline' to="contact">Get In Touch</Link></span>
                     </div>
                     <div className='flex flex-col custom-min:gap-2 sm:gap-4'>
                         <h2 className='text-3xl sm:mb-1 md:mb-4 text-white'>Other Pages</h2>
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">Privacy & Policy</Link></span>
+                            <Link className='hover:underline ' to="/">Privacy & Policy</Link></span>
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline hover:text-inherit' to="/">Terms of Services</Link></span>
+                            <Link className='hover:underline' to="/">Terms of Services</Link></span>
                     </div>
                 </div>
                 <p className='text-center text-gray-300 pt-2'>Copyright © 2024 Premier Management Consultacy</p>
             </div>
-        </section>
+        </footer>
     )
 }
 

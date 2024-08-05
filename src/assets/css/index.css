@@ -37,6 +37,25 @@ select {
     font: inherit;
 }
 
+a:active {
+    color: #0F0F0F;
+}
+
+menu a,
+a:active,
+a:focus {
+    color: #0F0F0F;
+}
+
+a:hover {
+    color: rgba(15, 15, 15, 0.8);
+}
+
+button a:active,
+button a:hover {
+    color: whitesmoke;
+}
+
 button {
     cursor: pointer;
 }
@@ -87,20 +106,21 @@ img {
     height: 0;
     border-top: 250px solid transparent;
     border-left: calc(1000 * (100vw / 1030)) solid #F1F2FF;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
 }
 
 @media (max-width: 600px) {
     .triangle-right-angle {
         border-top: 150px solid transparent;
-        /* Adjust the width */
     }
 }
 
 
-/* index.css or custom.css */
+/* Footer custom.css */
+
+footer a:hover,
+a:active {
+    color: whitesmoke;
+}
 
 .footer-section {
     position: relative;
@@ -136,24 +156,3 @@ img {
     background-color: rgba(229, 231, 248, 0.2);
     transform: rotate(25deg);
 }
-
-
-/* .footer-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 300px;
-  width: 120px; /* 3 * 40px */
-
-
-/* height: 100%;
-  background: repeating-linear-gradient(
-    to right,
-    rgba(229, 231, 248, 0.2),
-    rgba(229, 231, 248, 0.2) 40px,
-    transparent 40px,
-    transparent 80px
-  ); */
-
-
-/* } */

@@ -13,6 +13,7 @@ import DashboardLayout from '../dashboard/layout';
 import Dashboard from '../dashboard/pages';
 import EditProfile from '../dashboard/pages/EditProfile';
 import Account from "../dashboard/pages/Account";
+import LoginLayout from "../layout/LoginLayout";
 
 const routes = [
   {
@@ -38,25 +39,33 @@ const routes = [
         element: <ContactUs />,
       },
     ]
-  }, {
-    path: "login",
-    element: <Login />,
   },
   {
-    path: "signUp",
-    element: <SignUp />,
-  },
-  {
-    path: "forgot",
-    element: <Forgot />,
-  },
-  {
-    path: "verify",
-    element: <Verification />,
-  },
-  {
-    path: "reset",
-    element: <Reset />,
+    path: "/",
+    element: <LoginLayout />,
+    //   errorElement: ErrorPage,
+    children: [
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signUp",
+        element: <SignUp />,
+      },
+      {
+        path: "forgot",
+        element: <Forgot />,
+      },
+      {
+        path: "verify",
+        element: <Verification />,
+      },
+      {
+        path: "reset",
+        element: <Reset />,
+      },
+    ]
   },
   {
     path: '/dashboard',

@@ -60,7 +60,7 @@ function Planning() {
                     <img src={src} alt="growth" className='md:w-1/4 custom-min:w-2/4' />
                 </div>
                 <div className='flex items-center justify-center custom-min:gap-4 custom-min:w-full md:w-11/12  md:gap-16 text-white'>
-                    <h1>Have any Question?</h1>
+                    <h3>Have any Question?</h3>
                     <ButtonLink link="/contact" text="Get in Touch" className="custom-min:px-4 custom-min:w-1/2 custom-md:w-2/5 custom-min:py-2" classLink="text-base-color hover:text-slate-900" color="white" />
                 </div>
             </div>
