@@ -1,7 +1,6 @@
 import LoginForm from '../components/login';
 import ButtonLink from '../ui/ButtonLink';
 
-
 function Login() {
   return (
     <section className='min-h-[calc(100vh-60px)] bg-ground-color pb-8'>
