@@ -68,11 +68,11 @@ const routes = [
   //   ]
   // },
   {
-    path: '/home',
+    path: 'home',
     element: <DashboardLayout />,
     children: [
       {
-        path: "/home",
+        path: "home",
         element: <Dashboard />
       },
       {
