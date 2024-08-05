@@ -16,63 +16,63 @@ import Account from "../dashboard/pages/Account";
 import LoginLayout from "../layout/LoginLayout";
 
 const routes = [
-  {
-    path: "/",
-    element: <AppLayout />,
-    //   errorElement: ErrorPage,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "services",
-        element: <Services />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
+  // {
+  //   path: "/",
+  //   element: <AppLayout />,
+  //   //   errorElement: ErrorPage,
+  //   children: [
+  //     {
+  //       path: "/",
+  //       element: <Home />,
+  //     },
+  //     {
+  //       path: "services",
+  //       element: <Services />,
+  //     },
+  //     {
+  //       path: "about",
+  //       element: <About />,
+  //     },
 
-      {
-        path: "contact",
-        element: <ContactUs />,
-      },
-    ]
-  },
+  //     {
+  //       path: "contact",
+  //       element: <ContactUs />,
+  //     },
+  //   ]
+  // },
+  // {
+  //   path: "/",
+  //   element: <LoginLayout />,
+  //   //   errorElement: ErrorPage,
+  //   children: [
+  //     {
+  //       path: "login",
+  //       element: <Login />,
+  //     },
+  //     {
+  //       path: "signUp",
+  //       element: <SignUp />,
+  //     },
+  //     {
+  //       path: "forgot",
+  //       element: <Forgot />,
+  //     },
+  //     {
+  //       path: "verify",
+  //       element: <Verification />,
+  //     },
+  //     {
+  //       path: "reset",
+  //       element: <Reset />,
+  //     },
+  //   ]
+  // },
   {
-    path: "/",
-    element: <LoginLayout />,
-    //   errorElement: ErrorPage,
-    children: [
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "signUp",
-        element: <SignUp />,
-      },
-      {
-        path: "forgot",
-        element: <Forgot />,
-      },
-      {
-        path: "verify",
-        element: <Verification />,
-      },
-      {
-        path: "reset",
-        element: <Reset />,
-      },
-    ]
-  },
-  {
-    path: '/home',
+    path: '/',
     element: <DashboardLayout />,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <Dashboard />
       },
       {
