@@ -31,6 +31,10 @@ html {
     font-size: 12px;
 }
 
+a {
+    text-decoration: none;
+}
+
 input,
 textarea,
 select {
