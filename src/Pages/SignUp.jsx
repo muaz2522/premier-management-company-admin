@@ -4,8 +4,8 @@ import ButtonLink from '../ui/ButtonLink';
 
 function SignUp() {
   return (
-    <section className='min-h-lvh bg-ground-color'>
-      <div className="custom-min:flex custom-min:flex-col md:flex-row custom-min:items-center items-center gap-20 custom-min:px-12 sm:px-0 md:w-4/5 lg:w-3/4 pt-20 mx-auto">
+    <section className='min-h-lvh bg-ground-color pb-8'>
+      <div className="custom-min:flex custom-min:flex-col md:flex-row custom-min:items-center items-center gap-20 custom-min:px-12 md:w-4/5 lg:w-3/4 pt-20 mx-auto">
         <div className='md:w-[34rem]'>
           <h3 className='text-3xl font-semibold mb-4' style={{ color: "var(--bg-main)" }}>Information about<br />  Premier Management Consultant</h3>
           <p className='mb-3 text-base leading-8' style={{ color: "var(--color-main)" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sequi amet cupiditate, quis et beatae necessitatibus eos illum, labore alias inventore explicabo a doloribus architecto, fugit esse! Harum, enim error?

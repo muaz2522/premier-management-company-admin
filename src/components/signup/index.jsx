@@ -44,8 +44,8 @@ export default function SignUpForm() {
       <EmailInput register={register} errors={errors} Icon={Icons.EmailIcon} className="mb-8" />
 
       <div className='grid md:grid-cols-2 lg:gap-0 mb-8 custom-min:grid-cols-1 custom-min:gap-8'>
-        <PasswordInput register={register} errors={errors} className="w-[49%]" Icon={Icons.PasswordIcon} />
-        <ConfirmPasswordInput register={register} errors={errors} className="w-[49%]" Icon={Icons.PasswordIcon} />
+        <PasswordInput register={register} errors={errors} Icon={Icons.PasswordIcon} />
+        <ConfirmPasswordInput register={register} errors={errors}  Icon={Icons.PasswordIcon} />
       </div>
 
       <PhoneInput register={register} errors={errors} Icon={Icons.PhoneIcon} />

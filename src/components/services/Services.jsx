@@ -5,7 +5,7 @@ function Services() {
     return (
         <div className="py-16 sm:px-32 custom-min:px-24">
             <h1 className="text-4xl font-colona text-center">Our Services</h1>
-            <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 custom-md:grid-cols-1 custom-min:gap-8 py-8'>
+            <div className='grid lg:grid-cols-4 place-items-center md:grid-cols-3 sm:grid-cols-2 custom-md:grid-cols-1 custom-min:gap-8 py-8'>
                 <div className='relative'>
                     <div className="w-64 h-72 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon />}

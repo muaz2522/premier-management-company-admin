@@ -3,7 +3,7 @@ import React from 'react';
 const PasswordInput = ({ register, errors, className, Icon, classDiv }) => {
   return (
     <div>
-      <div className={`flex border-b border-gray-300 ${classDiv}`}>
+      <div className={`flex border-b border-gray-300 mr-2 ${classDiv}`}>
         {Icon && <Icon className="mr-2" />}
         <input
           id="password"

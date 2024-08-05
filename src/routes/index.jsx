@@ -32,31 +32,33 @@ const routes = [
         path: "about",
         element: <About />,
       },
-      {
-        path: "signUp",
-        element: <SignUp />,
-      }, {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "forgot",
-        element: <Forgot />,
-      },
-      {
-        path: "verify",
-        element: <Verification />,
-      },
-      {
-        path: "reset",
-        element: <Reset />,
-      },
+
       {
         path: "contact",
         element: <ContactUs />,
       },
     ]
   }, {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "signUp",
+    element: <SignUp />,
+  },
+  {
+    path: "forgot",
+    element: <Forgot />,
+  },
+  {
+    path: "verify",
+    element: <Verification />,
+  },
+  {
+    path: "reset",
+    element: <Reset />,
+  },
+  {
     path: '/dashboard',
     element: <DashboardLayout />,
     children: [
