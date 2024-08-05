@@ -7,7 +7,7 @@ function HomeSidebar({ isOpen, setIsOpen }) {
     
     return (
         <div>
-            <Offcanvas className={`custom-min:w-[50%] custom-md:w-[40%]`} zIndex={500} direction={"end"} scrollable
+            <Offcanvas className={`!w-[200px]`} zIndex={500} direction={"end"} scrollable
                 ={true} isOpen={isOpen} backdrop={false} onClick={toggle}>
                 <OffcanvasHeader toggle={toggle}>
                     {/* Offcanvas */}
