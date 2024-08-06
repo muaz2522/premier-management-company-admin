@@ -14,8 +14,8 @@ function Planning() {
             <div className='grid md:grid-cols-2 sm:grid-cols-1 custom-min:gap-16 custom-md:gap-24 sm:gap-40 custom-min:p-8 custom-md:p-24'>
                 <div>
                     <div className='flex flex-col'>
-                        <h3 className='text-xl font-medium'>Who we are</h3>
-                        <h1 className='text-4xl font-semibold custom-min:w-full py-4 text-center'>Your trusted strategic <br /> planning Consulter</h1>
+                        <h3 className='text-xl text-base-color font-medium'>Who we are</h3>
+                        <h1 className='text-4xl font-semibold custom-min:w-full py-4 ml-16'>Your trusted strategic <br /> planning Consulter</h1>
                     </div>
                     <div className='flex flex-col items-end gap-4'>
                         <p className='w-[70%]'>
@@ -30,7 +30,7 @@ function Planning() {
                 </div>
             </div>
             <div className='grid md:grid-cols-[1.4fr_1fr] sm:grid-cols-1 custom-min:gap-16 lg:gap-24'>
-                <div className='bg-core-color py-24 sm:py-16 custom-min:p-8 custom-md:px-24 flex flex-col gap-2'>
+                <div className='bg-core-color py-24 sm:py-16 custom-min:p-8 custom-md:px-24 flex flex-col gap-4'>
                     <h3 className='text-xl font-semibold text-base-color'>WHAT WE DO</h3>
                     <p className='w-3/4 text-pretty'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit
