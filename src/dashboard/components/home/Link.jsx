@@ -29,7 +29,7 @@ function Link({ className, isOpen }) {
                     Community
                 </NavLink>}
 
-                {isOpen ? <NavPost className="block" /> : "!text-black"}
+                {isOpen ? <NavPost className="block" /> : ""}
 
                 {isOpen ? <div className="flex gap-3 flex-col">
 
