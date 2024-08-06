@@ -3,12 +3,12 @@ import { InnerAlignmentIcon } from '../../assets/icons'
 
 function ServiceMethod() {
     return (
-        <section className="grid lg:grid-cols-3 md:grid-cols-1 gap-4 py-16 px-32 bg-gradient-to-t from-white to-ground-color">
-            <div className="lg:flex items-end justify-end custom-min:hidden ">
-                <img src={serviceMethod1} alt="service Method" className="w-[80%]" />
+        <section className="grid lg:grid-cols-3 md:grid-cols-1 gap-2 py-16 px-28 bg-gradient-to-t from-white to-ground-color">
+            <div className="lg:flex items-end justify-center custom-min:hidden ">
+                <img src={serviceMethod1} alt="service Method" className="w-[90%]" />
             </div>
-            <div className="lg:flex items-end custom-min:hidden">
-                <img src={serviceMethod2} alt="service Method" className="w-[80%]" />
+            <div className="lg:flex items-center custom-min:hidden">
+                <img src={serviceMethod2} alt="service Method" className="w-[90%]" />
             </div>
             <div className="flex flex-col">
                 <h3 className="text-base-color text-2xl py-4">About Our Methods</h3>
