@@ -10,8 +10,8 @@ function EditProfile() {
                     <div className='flex custom-min:flex-row md:flex-row sm:flex-col custom-min:items-center lg:items-start lg:flex-col gap-4 md:gap lg:gap-4'>
                         <img src={src} alt="Image" className='custom-min:w-1/3 md:w-1/3 sm:w-full lg:w-full' />
                         <div className='flex flex-col gap-4'>
-                        <Button className="p-2 w-32">Upload</Button>
-                        <Button className="p-2 w-max">Delete Account</Button>
+                        <Button className="custom-min:p-1 custom-min:text-sm sm:p-2 w-32">Upload</Button>
+                        <Button className="custom-min:p-1 custom-min:text-sm  sm:p-2 custom-min-w-32 sm:w-full">Delete Account</Button>
                         </div>
                     </div>
                     <div className='bg-ground-color'>

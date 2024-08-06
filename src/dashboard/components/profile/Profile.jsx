@@ -4,10 +4,10 @@ import cv from '../../../assets/images/dashboard/pdf.png'
 function Profile() {
     return (
         <div className="bg-ground-color">
-            <section className="p-8 grid custom-min:grid-cols-1 lg:grid-cols-[1fr_5fr] gap-8">
-                <div className='custom-md:flex sm:gap-4 custom-min:block'>
+            <section className="p-8 grid custom-min:grid-cols-1 md:grid-cols-[1.5fr_5fr] gap-4">
+                <div className='flex md:flex-col custom-min:gap-2 sm:gap-4'>
                     <div>
-                        <img src={src} alt='profile' className='w-4/5 custom-min:w-3/5' />
+                        <img src={src} alt='profile' className='custom-min:w-4/5' />
                     </div>
                     <div>
                         <h2 className='text-2xl font-semibold text-base-color my-2'>John Doe</h2>

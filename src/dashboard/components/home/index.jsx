@@ -7,7 +7,7 @@ import HomeSidebar from "../navbar/HomeSidebar";
 function DashboardCommunity() {
     return (
         <section>
-            <div className="grid sm:grid-cols-1 md:grid-cols-[1fr_10rem] ">
+            <div className="grid sm:grid-cols-1 md:grid-cols-[1fr_10rem] gap-8">
                 <Home />
                 <NavPost />
             </div>
