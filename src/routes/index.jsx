@@ -19,7 +19,6 @@ const routes = [
   {
     path: "/",
     element: <AppLayout />,
-    //   errorElement: ErrorPage,
     children: [
       {
         path: "/",
@@ -33,7 +32,6 @@ const routes = [
         path: "about",
         element: <About />,
       },
-
       {
         path: "contact",
         element: <ContactUs />,
@@ -43,7 +41,6 @@ const routes = [
   {
     path: "/",
     element: <LoginLayout />,
-    //   errorElement: ErrorPage,
     children: [
       {
         path: "login",
@@ -72,7 +69,7 @@ const routes = [
     element: <DashboardLayout />,
     children: [
       {
-        path: "",
+        path: "/dashboard",
         element: <Dashboard />
       },
       {
@@ -85,7 +82,6 @@ const routes = [
       },
     ]
   }
-  
 ]
 
 const router = createBrowserRouter(routes);

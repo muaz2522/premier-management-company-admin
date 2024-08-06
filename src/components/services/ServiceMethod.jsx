@@ -4,7 +4,7 @@ import { InnerAlignmentIcon } from '../../assets/icons'
 function ServiceMethod() {
     return (
         <section className="grid lg:grid-cols-3 md:grid-cols-1 gap-4 py-16 px-32 bg-gradient-to-t from-white to-ground-color">
-            <div className="lg:flex items-end custom-min:hidden ">
+            <div className="lg:flex items-end justify-end custom-min:hidden ">
                 <img src={serviceMethod1} alt="service Method" className="w-[80%]" />
             </div>
             <div className="lg:flex items-end custom-min:hidden">

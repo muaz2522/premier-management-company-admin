@@ -23,7 +23,7 @@ function DashboardLayout() {
     return (
         <>
             <Header />
-            <main className='grid md:grid-cols-[10rem_1fr] sm:grid-cols-1 custom-min:p-8 md:p-16 md:gap-8'>
+            <main className='grid md:grid-cols-[8rem_1fr] sm:grid-cols-1 custom-min:p-8 md:p-16 md:gap-4'>
                  <>
                     <div className="hidden custom-min:flex cursor-pointer pb-4 custom-min:justify-end md:hidden"
                         onClick={() => setIsOpen(!isOpen)}>
