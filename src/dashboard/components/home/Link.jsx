@@ -14,7 +14,7 @@ function Link({ className, isOpen }) {
                         to="/dashboard"
                         end
                         className={({ isActive }) => {
-                            return isActive ? "!text-slate-300" : "";
+                            return isActive ? "!text-slate-300" : "!text-black";
                         }}
                     >
                         Community
@@ -23,13 +23,13 @@ function Link({ className, isOpen }) {
                     to="/dashboard"
                     end
                     className={({ isActive }) => {
-                        return isActive ? "!text-slate-300" : "";
+                        return isActive ? "!text-slate-300" : "!text-black";
                     }}
                 >
                     Community
                 </NavLink>}
 
-                {isOpen ? <NavPost className="block" /> : ""}
+                {isOpen ? <NavPost className="block" /> : "!text-black"}
 
                 {isOpen ? <div className="flex gap-3 flex-col">
 
@@ -46,7 +46,7 @@ function Link({ className, isOpen }) {
                     to="/dashboard/profile"
                     className={({ isActive }) => {
 
-                        return isActive ? "!text-slate-300" : "";
+                        return isActive ? "!text-slate-300" : "!text-black";
                     }}
                 >
                     My Account
