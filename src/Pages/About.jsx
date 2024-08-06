@@ -6,7 +6,7 @@ import ButtonLink from '../ui/ButtonLink';
 function About() {
     return (
         <section className='bg-ground-color'>
-            <h2 className="text-4xl font-semibold text-center my-8 relative bg-white pb-4">About Us</h2>
+            <h2 className="text-4xl font-semibold text-center my-8 relative bg-white pb-12">About Us</h2>
             <div className="grid sm:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-8 place-items-center custom-min:pt-4 sm:pt-8 lg:px-16 sm:gap-4 md:gap-16 lg:gap-40 h-full">
                 <div className="flex gap-4 flex-col px-16">
                 {/* <img src={src1} alt="About Image" className='absolute custom-min:left-48 sm:left-2/4 top-0 w-1/5 z-1 opacity-30' /> */}
