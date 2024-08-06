@@ -37,15 +37,9 @@ function Link({ className, isOpen }) {
                         <BsArrow90DegRight size={"16px"} />
                         <NavLink to="/dashboard/profile" className={`text-black hover:text-black`}>My Account</NavLink>
                     </div>
-<<<<<<< HEAD
-                    <div className="ml-10 flex flex-col gap-3">
-                    <NavLink to="/dashboard/edit-profile" className="w-max !text-black hover:text-black text-center">Edit Profile</NavLink>
-                    <NavLink className="w-max !text-black hover:text-black text-center">Change Password</NavLink>
-=======
                     <div className="ml-10 flex flex-col gap-2">
                         <NavLink to="/dashboard/edit-profile" className="w-max text-center">Edit Profile</NavLink>
                         <NavLink className="w-max text-center">Change Password</NavLink>
->>>>>>> dev
                     </div>
 
                 </div> : <NavLink
