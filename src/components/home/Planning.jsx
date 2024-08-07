@@ -6,11 +6,12 @@ import src3 from '../../assets/images/home/market-analysis.png';
 import src4 from '../../assets/images/home/retention.png';
 import src5 from '../../assets/images/home/solution.png';
 import src6 from '../../assets/images/home/recruitment-human.png';
-
+import {PlanningShadow} from '../../assets/icons';
 
 function Planning() {
     return (
-        <section >
+        <section className='relative'>
+            <div className='absolute left-0 top-24'>{PlanningShadow && <PlanningShadow/>}</div>
             <div className='grid md:grid-cols-2 sm:grid-cols-1 custom-min:gap-16 custom-md:gap-24 sm:gap-40 custom-min:p-8 custom-md:p-16'>
                 <div>
                     <div className='flex flex-col'>
@@ -21,6 +22,7 @@ function Planning() {
                         <p className='w-[60%] text-text-color'>
                             Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.<br/>
                             Sed tortor nisi, molestie eu dui <br/> ut, fringilla tristique quam
+
                         </p>
                         <img src={src1} alt="strategy 1" className='w-[60%]' />
                     </div>

@@ -153,11 +153,29 @@ export const BusinessGrowth = ({ width = "18px", height = "14px" }) => {
     );
 }
 
-export const BelowArrowIcon =({ width = "24px", height = "18px" })=>{
-    return(
+export const BelowArrowIcon = ({ width = "24px", height = "18px" }) => {
+    return (
         <svg width={width} height={height} viewBox="0 0 30 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.5858 50.455C14.3668 51.2361 15.6332 51.2361 16.4142 50.455L29.1421 37.7271C29.9232 36.946 29.9232 35.6797 29.1421 34.8987C28.3611 34.1176 27.0948 34.1176 26.3137 34.8987L15 46.2124L3.68629 34.8987C2.90524 34.1176 1.63891 34.1176 0.857864 34.8987C0.0768156 35.6797 0.0768156 36.946 0.857864 37.7271L13.5858 50.455ZM13 0V49.0408H17V0H13Z" fill="#383C6C"/>
-</svg>
+            <path d="M13.5858 50.455C14.3668 51.2361 15.6332 51.2361 16.4142 50.455L29.1421 37.7271C29.9232 36.946 29.9232 35.6797 29.1421 34.8987C28.3611 34.1176 27.0948 34.1176 26.3137 34.8987L15 46.2124L3.68629 34.8987C2.90524 34.1176 1.63891 34.1176 0.857864 34.8987C0.0768156 35.6797 0.0768156 36.946 0.857864 37.7271L13.5858 50.455ZM13 0V49.0408H17V0H13Z" fill="#383C6C" />
+        </svg>
+
+    );
+}
+
+export const PlanningShadow = ({ width = "180", height = "466" }) => {
+    return (
+        <svg width={width} height={height} viewBox="0 0 244 666" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_0_21)">
+                <path d="M-33.5 112C144.5 268.5 149.5 430 104.5 529.5C68.5 609.1 -65.5 441 -128 347" stroke="#A0D1FF" stroke-width="30" />
+            </g>
+            <defs>
+                <filter id="filter0_f_0_21" x="-240.491" y="0.734863" width="483.815" height="664.553" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_0_21" />
+                </filter>
+            </defs>
+        </svg>
 
     );
 }
