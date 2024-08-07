@@ -3,9 +3,9 @@ import { service1, service2, service3, service4 } from "../../assets/images/serv
 
 function Services() {
     return (
-        <div className="py-12 sm:px-32 custom-min:px-24">
+        <div className="py-12 sm:px-32 custom-min:px-20">
             <h1 className="text-4xl font-colona text-base-color text-center">Our Services</h1>
-            <div className='grid lg:grid-cols-4 place-items-center md:grid-cols-3 sm:grid-cols-2 custom-md:grid-cols-1 custom-min:gap-8 sm:gap-16 py-12'>
+            <div className='grid lg:grid-cols-4 place-items-center md:grid-cols-3 custom-md:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-8 sm:gap-16 py-12'>
                 <div className='relative w-full'>
                     <div className="w-full h-80 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon width="97%" height='65%' />}

@@ -30,7 +30,7 @@ function Planning() {
                 </div>
             </div>
             <div className='grid md:grid-cols-[1.4fr_1fr] sm:grid-cols-1 custom-min:gap-16 lg:gap-24'>
-                <div className='bg-core-color py-24 sm:py-16 custom-min:p-8 custom-md:px-24 flex flex-col gap-4'>
+                <div className='bg-core-color py-24 sm:py-16 custom-min:p-8 custom-md:px-24 custom-min:mr-8 custom-md:mr-24 md:mr-0 flex flex-col gap-4'>
                     <h3 className='text-xl font-semibold text-base-color'>WHAT WE DO</h3>
                     <p className='w-3/4 text-pretty'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit
