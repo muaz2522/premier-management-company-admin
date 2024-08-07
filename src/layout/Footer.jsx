@@ -14,7 +14,7 @@ function Footer() {
                 <div className='border-b border-gray-300 pb-4 text-base text-footer-color custom-min:grid-cols-1 custom-md:grid-cols-2 custom-min:place-items-center custom-md:place-items-start grid md:grid-cols-4 gap-4'>
                     <div className='flex flex-col custom-min:items-center custom-md:items-start custom-min:gap-2 lg:gap-8'>
                         <img src={src} alt="Premier" className='md:max-w-[80%] max-w-full' />
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2">
                             <p className='grid grid-cols-[20px_1fr] gap-3'>
                                 <span>{Icons.Telephone && <Icons.Telephone />}</span>
                                 <span>+1 324536467685</span>
