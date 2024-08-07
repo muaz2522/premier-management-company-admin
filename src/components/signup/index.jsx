@@ -104,7 +104,7 @@ export default function SignUpForm() {
       </div>
 
 
-      <Button type="submit" className="py-2 px-4">Sign Up</Button>
+      <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button>
     </form>
   );
 }

@@ -14,15 +14,18 @@ function Link({ className, isOpen }) {
                         to="/dashboard"
                         end
                         className={({ isActive }) => {
-                            return isActive ? "!text-slate-300" : "!text-black";
+                            "text-xl"
+                            `text-xl ${isActive ? "!text-slate-300" : "!text-black"}`
                         }}
                     >
                         Community
                     </NavLink>
                 </div> : <NavLink
                     to="/dashboard"
+                    style={{fontSize:"14px"}}
                     end
                     className={({ isActive }) => {
+                        
                         return isActive ? "!text-slate-300" : "!text-black";
                     }}
                 >
@@ -44,6 +47,7 @@ function Link({ className, isOpen }) {
 
                 </div> : <NavLink
                     to="/dashboard/profile"
+                    style={{fontSize:"14px"}}
                     className={({ isActive }) => {
 
                         return isActive ? "!text-slate-300" : "!text-black";

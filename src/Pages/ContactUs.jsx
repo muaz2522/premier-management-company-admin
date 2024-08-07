@@ -7,17 +7,17 @@ import * as Icons from '../assets/icons';
 function ContactUs() {
     return (
         <section className="pt-8">
-            <h2 className="text-4xl font-semibold text-center mb-8">Get in Touch</h2>
+            <h2 className="text-4xl font-semibold text-center mb-12">Get in Touch</h2>
             <div className="flex md:justify-between md:flex-row custom-min:flex-col custom-min:gap-8 md:gap-0 items-center h-full sm:py-8 sm:px-32 custom-min:py-16 custom-min:px-8 bg-ground-color">
                 <div>
-                    <h3 className="text-xl font-semibold">Contact Us</h3>
-                    <h1 className="md:text-6xl sm:text-4xl custom-min:text-3xl my-4">Have questions? <br /> Get in touch!</h1>
+                    <h3 className="text-xl text-base-color font-semibold">CONTACT US</h3>
+                    <h1 style={{lineHeight:"1.3"}} className="md:text-5xl sm:text-4xl font-semibold custom-min:text-3xl my-4">Have questions? <br /> Get in touch!</h1>
                     <div className="text-lg">
                         <div className="mb-2">
-                            <span className="block text-base-color">+1 324 536 4676 85</span>
+                            <span className="block font-normal text-lg text-base-color">+1 324 536 4676 85</span>
                         </div>
                         <div>
-                            <span className="block text-base-color">Support@premier.com</span>
+                            <span className="block font-normal text-lg text-base-color">Support@premier.com</span>
                         </div>
                     </div>
                 </div>
