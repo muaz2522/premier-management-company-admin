@@ -4,7 +4,7 @@ import { specialty1, specialty2, specialty3 } from "../../assets/images/services
 function Specialty() {
     return (
         <div className="py-6 sm:px-24 custom-min:px-8 bg-core-color">
-            <h1 className="text-4xl text-special-color font-colona text-center">OUR SPECIALTY</h1>
+            <h1 className="text-4xl text-special-color special-font text-center">OUR SPECIALTY</h1>
             <div className="grid lg:grid-cols-3 custom-min:gap-8 sm:grid-cols-2 custom-min:grid-cols-1 py-8">
                 <div className="relative flex justify-center">
                     <img src={specialty1} alt="specialty image" className="sm:w-[85%] custom-min:w-[60%] " />
