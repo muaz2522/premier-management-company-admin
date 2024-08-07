@@ -1,5 +1,7 @@
 import { ClickIcon } from '../assets/icons';
 import src from '../assets/images/about-img-2.png';
+import src1 from '../assets/images/about-img-2.png';
+
 import ButtonLink from '../ui/ButtonLink';
 
 function About() {
@@ -7,7 +9,7 @@ function About() {
         <section className='bg-ground-color'>
             <h2 className="text-4xl font-semibold text-center my-8 relative bg-white pb-4">Get in Touch</h2>
             <div className="grid sm:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-8 place-items-center custom-min:pt-4 sm:pt-16 lg:px-24 sm:gap-4 md:gap-16 lg:gap-48  h-full">
-                {/* <img src={src} alt="About Image" className='absolute right-0 top-0 w-20% z-[-1]' /> */}
+                <img src={src1} alt="About Image" className='absolute right-0 top-0 w-20% z-[-1]' />
                 <div className="flex gap-4 flex-col px-16 ">
                     <h3 className="text-xl font-semibold custom-min:text-center sm:text-start">About Us</h3>
                     <h1 className="sm:text-3xl md:text-4xl font-semibold">Providing Consulting <br /> Services & Business <br />  Management</h1>
