@@ -5,7 +5,7 @@ function Menu() {
         <menu className="flex sm:gap-4 md:gap-12 custom-min:flex-col sm:flex-row custom-min:gap-4  custom-min:items-center">
           <NavLink
             className={({ isActive }) =>
-              `hover:text-nav-color ${isActive ? "!underline-offset-1 !underline" : ""}`
+              `hover:text-nav-color font-semibold ${isActive ? "!underline-offset-1 !underline" : ""}`
             }
             to="/"
           >
@@ -14,19 +14,19 @@ function Menu() {
 
           <NavLink
             className={({ isActive }) =>
-              `hover:text-nav-color ${isActive ? "!underline-offset-1 !underline" : ""}`
+              `hover:text-nav-color font-semibold ${isActive ? "!underline-offset-1 !underline" : ""}`
             }
             to="/services"
           >
-            Services
+            Our Services
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `hover:text-nav-color ${isActive ? "!underline-offset-1 !underline" : ""}`
+              `hover:text-nav-color font-semibold ${isActive ? "!underline-offset-1 !underline" : ""}`
             }
             to="/about"
           >
-            About US
+            About Us
           </NavLink>
         </menu>
     )
