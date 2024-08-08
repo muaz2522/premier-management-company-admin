@@ -7,6 +7,7 @@ import PhoneInput from '../../ui/form/PhoneInput';
 // import Button from '../../ui/Button';
 import * as Icons from '../../assets/icons';
 import ButtonLink from '../../ui/ButtonLink';
+import { Link } from 'react-router-dom';
 
 
 export default function SignUpForm() {
@@ -99,7 +100,7 @@ export default function SignUpForm() {
       <div className='mb-8'>
         <div className='flex'>
           <input type="checkbox" {...register("isAgree", { required: "Checkbox is required" })} />
-          <span className='ml-2'>I agree to the terms and services.</span>
+          <span className='ml-2 text-lg text-text-color'>I agree to the <Link className='border-b-2'>Terms of Services</Link> and <Link className='border-b-2'>Privacy Policy</Link>.</span>
         </div>
         {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
       </div>

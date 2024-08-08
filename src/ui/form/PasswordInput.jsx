@@ -3,7 +3,7 @@ import React from 'react';
 const PasswordInput = ({ register, errors, className, Icon, classDiv }) => {
   return (
     <div>
-      <div className={`flex border-b border-gray-300 mr-2 ${classDiv}`}>
+      <div className={`flex items-center border-b border-gray-300 mr-2 ${classDiv}`}>
         {Icon && <Icon className="mr-2" />}
         <input
           id="password"
@@ -15,7 +15,7 @@ const PasswordInput = ({ register, errors, className, Icon, classDiv }) => {
               message: 'Password must be at least 6 characters long'
             }
           })}
-          className={`text-base ml-3 w-full outline-none mb-2 ${className}`}
+          className={`text-lg ml-3 w-full outline-none mb-2 ${className}`}
           placeholder="Password"
         />
       </div>

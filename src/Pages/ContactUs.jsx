@@ -14,7 +14,7 @@ function ContactUs() {
                     <h1 style={{lineHeight:"1.3"}} className="md:text-5xl sm:text-4xl font-semibold custom-min:text-3xl my-4">Have questions? <br /> Get in touch!</h1>
                     <div className="text-lg">
                         <div className="mb-2">
-                            <span className="block font-normal text-lg text-base-color">+1 324 536 4676 85</span>
+                            <span className="block font-normal text-lg text-base-color">+1(324 536 4676 85)</span>
                         </div>
                         <div>
                             <span className="block font-normal text-lg text-base-color">Support@premier.com</span>
@@ -62,7 +62,7 @@ function ContactForm() {
             <div className='my-8'>
                 <div className='flex'>
                     <input type="checkbox" {...register("isAgree", { required: "Checkbox is required" })} />
-                    <span className='ml-2'>I agree that my submitted data is being collected and stored.</span>
+                    <span className='ml-2 text-lg text-dashboard-para'>I agree that my submitted data is being collected and stored.</span>
                 </div>
                 {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
             </div>

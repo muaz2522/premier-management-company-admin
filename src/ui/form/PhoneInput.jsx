@@ -15,7 +15,7 @@ const PhoneInput = ({ register, errors, Icon, className, color }) => {
               message: 'Phone number must be 10 digits'
             }
           })}
-          className={`text-base w-full ml-3 outline-none ${color}`}
+          className={`text-lg w-full ml-3 outline-none ${color}`}
           placeholder="Phone"
         />
       </div>

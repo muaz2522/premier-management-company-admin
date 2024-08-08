@@ -8,7 +8,7 @@ function HomeLayout() {
         <section>
             <div className="grid relative sm:grid-cols-[2fr_1.1fr] custom-min:grid-cols-1 custom-min:p-8 custom-md:p-12 custom-md:px-16">
                 <h2 className="text-5xl font-semibold leading-tight md:ml-10">Strategy Solution for <br /> business success</h2>
-                <p className="custom-min:pt-8 sm:pt-0 w-3/4 text-text-color flex items-center text-pretty">
+                <p className="custom-min:pt-8 sm:pt-0 w-3/4 text-lg text-text-color flex items-center text-pretty">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi,
                     molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit

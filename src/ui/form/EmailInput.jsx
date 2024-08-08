@@ -3,7 +3,7 @@ import React from 'react';
 const EmailInput = ({ register, errors, Icon, className, color }) => {
   return (
     <div className={`${className ? className : "mb-4"}`}>
-      <div className="flex border-b border-gray-300">
+      <div className="flex items-center border-b border-gray-300">
         {Icon && <Icon className="mr-2" />}
         <input
           id="email"
@@ -15,7 +15,7 @@ const EmailInput = ({ register, errors, Icon, className, color }) => {
               message: 'Invalid email address'
             }
           })}
-          className={`text-base outline-none w-full pl-3 ${color}`}
+          className={`text-lg outline-none w-full pl-3 ${color}`}
           placeholder="Email"
         />
       </div>

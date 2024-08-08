@@ -19,7 +19,7 @@ export default function LoginForm() {
       <EmailInput register={register} errors={errors} className="mb-8" Icon={Icons.EmailIcon} />
       <PasswordInput register={register} errors={errors} className="w-full" Icon={Icons.PasswordIcon} />
 
-      <Link to="/forgot" className='d-block pb-8 text-text-color mt-2 '>Forgot your Password?</Link>
+      <Link to="/forgot" className='d-block text-lg pb-8 text-text-color mt-2 '>Forgot your Password?</Link>
       {/* <Button type="submit" className="py-2 px-4">Sign In</Button> */}
       <ButtonLink link="/dashboard" text="Sign In" className="py-2 px-4" />
     </form>

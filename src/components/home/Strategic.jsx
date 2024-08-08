@@ -57,15 +57,15 @@ function Strategic() {
                         <div className="flex flex-col gap-4 text-text-color py-4">
                             <div className="flex items-center gap-2">
                                 {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                                <span>molestie eu dui ut, fringilla tristique quam</span>
+                                <span className='text-lg'>molestie eu dui ut, fringilla tristique quam</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                                <span>Lorem, ipsum dolor sit</span>
+                                <span className='text-lg'>Lorem, ipsum dolor sit</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                                <span>Lorem, ipsum dolor sit</span>
+                                <span className='text-lg'>Lorem, ipsum dolor sit</span>
                             </div>
                         </div>
                     </div>

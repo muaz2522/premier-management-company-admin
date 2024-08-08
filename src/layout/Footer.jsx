@@ -17,18 +17,18 @@ function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className='grid grid-cols-[20px_1fr] gap-3'>
                                 <span>{Icons.Telephone && <Icons.Telephone />}</span>
-                                <span>+1 324536467685</span>
+                                <span className='text-[14px]'>+1 324536467685</span>
                             </p>
                             <p className='grid grid-cols-[20px_1fr] gap-3'>
                                 <span>{Icons.EmailIFill && <Icons.EmailIFill className="mr-2" />}</span>
-                                <span>Support@premier.com</span>
+                                <span className='text-[14px]'>Support@premier.com</span>
                             </p>
                         </div>
                     </div>
 
                     <div className='flex flex-col text-wrap custom-min:items-center custom-md:items-start'>
                         <h2 className='text-3xl custom-min:md-4 md:mb-8 text-white'>About Us</h2>
-                        <p className='md-w-full lg:w-[90%] custom-min:text-center text-footer-color custom-md:text-start'>
+                        <p className='md-w-full lg:w-[90%] text-[14px] custom-min:text-center text-footer-color custom-md:text-start'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </div>
@@ -36,23 +36,23 @@ function Footer() {
                         <h2 className='text-3xl custom-min:mb-1 md:mb-4 text-white'>Other Pages</h2>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-white' to="/">Home</Link></span>
+                            <Link className='hover:underline text-lg text-white' to="/">Home</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-footer-color ite' to="services">Services</Link></span>
+                            <Link className='hover:underline text-lg text-footer-color ite' to="services">Services</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-footer-color' to="about">About Us</Link></span>
+                            <Link className='hover:underline text-lg text-footer-color' to="about">About Us</Link></span>
 
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-footer-color' to="contact">Get In Touch</Link></span>
+                            <Link className='hover:underline text-lg text-footer-color' to="contact">Get In Touch</Link></span>
                     </div>
                     <div className='flex flex-col custom-min:gap-2 sm:gap-4'>
                         <h2 className='text-3xl sm:mb-1 md:mb-4 text-white'>Other Pages</h2>
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-footer-color' to="/">Privacy & Policy</Link></span>
+                            <Link className='hover:underline text-lg text-footer-color' to="/">Privacy & Policy</Link></span>
                         <span className='flex items-center'>{Icons.Arrow && <Icons.Arrow className="mr-2" />}
-                            <Link className='hover:underline text-footer-color' to="/">Terms of Services</Link></span>
+                            <Link className='hover:underline text-lg text-footer-color' to="/">Terms of Services</Link></span>
                     </div>
                 </div>
                 <p className='text-center text-xs text-footer-color pt-2'>Copyright © 2024 Premier Management Consultacy</p>

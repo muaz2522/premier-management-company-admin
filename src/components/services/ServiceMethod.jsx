@@ -13,19 +13,19 @@ function ServiceMethod() {
             <div className="flex flex-col">
                 <h3 className="text-base-color font-semibold text-xl py-4">ABOUT OUR METHODS</h3>
                 <h1 className="text-5xl font-semibold leading-tight pb-4">Manage Business Ensure Success</h1>
-                <p className="text-lg text-pretty w-3/5">Lorem, ipsum dolor sit amet odit reprehenderit quos omnis.</p>
+                <p className="text-xl text-pretty w-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div className="py-8 flex flex-col gap-4 text-text-color">
                     <div className="flex items-center gap-2">
                         {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                        <span>Lorem, ipsum dolor sit</span>
+                        <span className="text-lg">Lorem, ipsum dolor sit</span>
                     </div>
                     <div className="flex items-center gap-2">
                         {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                        <span>Lorem, ipsum dolor sit</span>
+                        <span className="text-lg">Lorem, ipsum dolor sit</span>
                     </div>
                     <div className="flex items-center gap-2">
                         {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                        <span>Lorem, ipsum dolor sit</span>
+                        <span className="text-lg">Lorem, ipsum dolor sit</span>
                     </div>
                 </div>
             </div>
