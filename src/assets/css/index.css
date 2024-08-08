@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 * {
-    /* font-family: "Poppins", sans-serif; */
-    font-family: "Microsoft JhengHei", sans-serif;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Microsoft JhengHei", sans-serif; */
+    font-family: 'Microsoft JhengHei', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 a {
