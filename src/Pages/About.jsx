@@ -1,8 +1,6 @@
 import { ClickIcon } from '../assets/icons';
 import src from '../assets/images/about-img-2.png';
 import src1 from '../assets/images/about-img.png';
-
-// import src1 from '../assets/images/about-img.png';
 import ButtonLink from '../ui/ButtonLink';
 
 function About() {
@@ -24,14 +22,22 @@ function About() {
                             <span className="bg-base-color py-2.5 px-3 rounded-full inline-block">{ClickIcon && <ClickIcon />}</span>
                             <h3 className="text-xl font-semibold">Our Mission</h3>
                         </div>
+<<<<<<<<< Temporary merge branch 1
+                        <p className="sm:w-3/4 text-lg text-text-color">Lorem ipsum Molestiae, accusantium fugiat debitis laborum quibusdam quos quis qui atque nameiciendis, minima.</p>
+=========
                         <p className='text-text-color'>Lorem ipsum Molestiae, accusantium fugiat debitis laborum quibusdam quos quis qui atque nameiciendis, minima.</p>
+>>>>>>>>> Temporary merge branch 2
                     </div>
                     <div>
                         <div className='flex gap-4 items-center mb-4'>
                             <span className="bg-base-color py-2.5 px-3 rounded-full inline-block">{ClickIcon && <ClickIcon />}</span>
                             <h3 className="text-xl font-semibold">Our Vision</h3>
                         </div>
+<<<<<<<<< Temporary merge branch 1
+                        <p className="sm:w-3/4 text-lg text-text-color">Lorem ipsum Molestiae, accusantium fugiat debitis laborum quibusdam quos quis qui atque nameiciendis, minima.</p>
+=========
                         <p className='text-text-color'>Lorem ipsum Molestiae, accusantium fugiat debitis laborum quibusdam quos quis qui atque nameiciendis, minima.</p>
+>>>>>>>>> Temporary merge branch 2
                     </div>
                 </div>
             </div>
