@@ -107,7 +107,7 @@ export default function SignUpForm() {
 
 
       {/* <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button> */}
-      <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4" />
+      <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4 text-white" classLink="text-white" />
     </form>
   );
 }

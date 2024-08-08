@@ -21,7 +21,7 @@ export default function LoginForm() {
 
       <Link to="/forgot" className='d-block text-lg pb-8 text-text-color mt-2 '>Forgot your Password?</Link>
       {/* <Button type="submit" className="py-2 px-4">Sign In</Button> */}
-      <ButtonLink link="/dashboard" text="Sign In" className="py-2 px-4" />
+      <ButtonLink link="/dashboard" text="Sign In" className="py-2 px-4" classLink="text-white" />
     </form>
   );
 }
