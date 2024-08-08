@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 * {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     /* font-family: "Microsoft JhengHei", sans-serif; */
     font-family: 'Microsoft JhengHei', sans-serif;
     font-weight: 400;
