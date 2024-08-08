@@ -126,7 +126,7 @@ export const ServiceImageIcon = ({ width = "210px", height = '150px' }) => {
     );
 }
 
-export const InnerAlignmentIcon = ({ width = "24px", height = "18px" }) => {
+export const InnerAlignmentIcon = ({ width = "28px", height = "20px" }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6 22.5C6 18.1239 7.73839 13.9271 10.8327 10.8327C13.9271 7.73839 18.1239 6 22.5 6C26.8761 6 31.0729 7.73839 34.1673 10.8327C37.2616 13.9271 39 18.1239 39 22.5C39 26.8761 37.2616 31.0729 34.1673 34.1673C31.0729 37.2616 26.8761 39 22.5 39C18.1239 39 13.9271 37.2616 10.8327 34.1673C7.73839 31.0729 6 26.8761 6 22.5ZM21.5584 29.562L31.058 17.6864L29.342 16.3136L21.2416 26.4358L15.504 21.6552L14.096 23.3448L21.5584 29.562Z" fill="#383C6C" />
@@ -135,7 +135,6 @@ export const InnerAlignmentIcon = ({ width = "24px", height = "18px" }) => {
 
     );
 }
-
 
 export const BusinessGrowth = ({ width = "18px", height = "14px" }) => {
     return (

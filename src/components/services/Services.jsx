@@ -10,29 +10,29 @@ function Services() {
                     <div className="w-full h-80 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon width="97%" height='65%' />}
                     </div>
-                    <h3 className='font-semibold text-2xl absolute top-16 left-4'>Project <br/> Management</h3>
-                    <img src={service1} alt="service" className='w-24 absolute bottom-1 left-[33.33%]' />
+                    <h3 className='font-bold text-2xl absolute top-16 left-8'>Project <br/> Management</h3>
+                    <img src={service1} alt="service" className='w-24 absolute bottom-2 left-[33.33%]' />
                 </div>
                 <div className='relative w-full'>
                     <div className="w-full h-80 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon width="97%" height='65%' />}
                     </div>
-                    <h3 className='font-semibold text-2xl absolute top-16 left-4'>Legal <br /> Consultant</h3>
-                    <img src={service4} alt="service" className='w-24 absolute bottom-1 left-[33.33%]' />
+                    <h3 className='font-bold text-2xl absolute top-16 left-8'>Legal <br /> Consultant</h3>
+                    <img src={service4} alt="service" className='w-24 absolute bottom-2 left-[33.33%]' />
                 </div>
                 <div className='relative w-full'>
                     <div className="w-full h-80 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon width="97%" height='65%' />}
                     </div>
-                    <h3 className='font-semibold text-2xl absolute top-16 left-4'>Business <br /> Growth</h3>
-                    <img src={service3} alt="service" className='w-24 absolute bottom-1 left-[33.33%]' />
+                    <h3 className='font-bold text-2xl absolute top-16 left-8'>Business <br /> Growth</h3>
+                    <img src={service3} alt="service" className='w-24 absolute bottom-2 left-[33.33%]' />
                 </div>
                 <div className='relative w-full'>
                     <div className="w-full h-80 rounded bg-core-color">
                         {ServiceImageIcon && <ServiceImageIcon width="97%" height='65%' />}
                     </div>
-                    <h3 className='font-semibold text-2xl absolute top-16 left-4'>New <br /> Business Idea</h3>
-                    <img src={service2} alt="service" className='w-24 absolute bottom-1 left-[33.33%]' />
+                    <h3 className='font-bold text-2xl absolute top-16 left-8'>New <br /> Business Idea</h3>
+                    <img src={service2} alt="service" className='w-24 absolute bottom-2 left-[33.33%]' />
                 </div>
             </div>
         </div>
