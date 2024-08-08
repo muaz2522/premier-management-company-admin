@@ -37,16 +37,16 @@ function Strategic() {
             <div className=' custom-min:px-8 custom-md:px-24 py-8'>
                 <span className="block text-5xl mt-2 leading-tight text-center font-semibold">Building Experience & Give <br /> High Success Rates</span>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 md:gap-8 lg:gap-0 md:py-4 custom-min:pt-16'>
-                    <div className='flex md:flex-col sm:flex-row custom-min:flex-col custom-min:gap-4 md:gap-0 items-center justify-end'>
-                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 py-4 text-center text-base-color mb-4'>
+                    <div className='flex md:flex-col sm:flex-row custom-min:flex-col custom-min:gap-4 md:gap-0 items-center justify-center'>
+                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-10/12 py-2 text-center text-base-color mb-4'>
                             <h1 className='text-4xl font-black mb-1'>900+</h1>
                             <h3 className='font-semibold text-lg'>Gave Advices</h3>
                         </div>
-                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 p-4 text-center text-base-color mb-4'>
+                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-10/12 py-2 text-center text-base-color mb-4'>
                             <h1 className='text-4xl font-black mb-1'>80</h1>
                             <h3 className='font-semibold text-lg'>Happy Clients</h3>
                         </div>
-                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 p-4 text-center text-base-color mb-4'>
+                        <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-10/12 py-2 text-center text-base-color mb-4'>
                             <h1 className='text-4xl font-black mb-1'>80</h1>
                             <h3 className='font-semibold text-lg'>Completed Projects</h3>
                         </div>
@@ -57,7 +57,7 @@ function Strategic() {
                         <div className="flex flex-col gap-4 text-text-color py-4">
                             <div className="flex items-center gap-2">
                                 {InnerAlignmentIcon && <InnerAlignmentIcon />}
-                                <span>Lorem, ipsum dolor sit</span>
+                                <span>molestie eu dui ut, fringilla tristique quam</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 {InnerAlignmentIcon && <InnerAlignmentIcon />}

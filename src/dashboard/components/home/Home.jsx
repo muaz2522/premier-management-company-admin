@@ -18,7 +18,7 @@ function Home() {
                 </div>
                 <div className='py-4'>
                     <img src={src1} alt="Article images" className='pb-4' />
-                    <p className='text-dashboard-para'>
+                    <p className='text-dashboard-para text-lg'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem
                         iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim.
                         Curabitur est tortor, viverra vitae tellus vel, luctus hendrerit enim.
@@ -37,7 +37,7 @@ function Home() {
                         <p className='text-slate-400'>4 hrs ago</p>
                     </div>
                 </div>
-                <p className='text-dashboard-para py-4'>
+                <p className='text-dashboard-para py-4 text-lg'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit
                     sed augue fringilla faucibus eget et enim. Curabitur est tortor, viverra vitae tellus vel, luctus hendrerit enim.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Lorem ipsum dolor sit amet,

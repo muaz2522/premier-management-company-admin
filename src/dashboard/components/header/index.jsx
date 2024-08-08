@@ -10,7 +10,7 @@ function Header() {
             <NavLink to="/">
                 <img className="w-40" src={src} alt="Premier" />
             </NavLink>
-            <h3 className='hidden custom-min:hidden sm:block text-2xl font-medium text-base-color'>{isDashboard}</h3>
+            <h3 className='hidden custom-min:hidden sm:block text-2xl font-semibold text-base-color'>{isDashboard}</h3>
             <img className="w-8" src={profile} alt="profile" />
         </nav>
     )
