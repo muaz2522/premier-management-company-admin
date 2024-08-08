@@ -1,7 +1,6 @@
 import { ClickIcon } from '../assets/icons';
 import src from '../assets/images/about-img-2.png';
 import src1 from '../assets/images/about-img.png';
-
 import ButtonLink from '../ui/ButtonLink';
 
 function About() {
