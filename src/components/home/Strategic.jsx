@@ -51,7 +51,7 @@ function Strategic() {
                             <h3 className='font-semibold text-lg'>Completed Projects</h3>
                         </div>
                     </div>
-                    <div className='px-4 flex flex-col sm:mb-16 justify-center'>
+                    <div className='px-4 flex flex-col justify-center'>
                         <p className='text-pretty text-lg font-semibold'>Lorem ipsum dolor sit amet, consectetur  <br/>adipiscing elit. Sed tortor nisi, molestie eu dui ut, fringilla tristique quam
                         </p>
                         <div className="flex flex-col gap-4 text-text-color py-4">
