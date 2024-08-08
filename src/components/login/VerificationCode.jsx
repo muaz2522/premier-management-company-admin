@@ -30,7 +30,7 @@ function VerificationForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="mb-28">
       <PhoneInput register={register} errors={errors} Icon={Icons.PasswordIcon} />
-      <ButtonLink link="/reset" text="Next" className="py-1 mt-2 px-20"/>
+      <ButtonLink link="/reset" text="Next" className="py-1 mt-2 px-20" classLink="text-white"/>
     </form>
   );
 }

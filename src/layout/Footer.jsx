@@ -4,7 +4,8 @@ import * as Icons from '../assets/icons';
 
 function Footer() {
     return (
-        <footer className='bg-base-color relative md:h-[240px] md:truncate'>
+        //md:h-[240px]
+        <footer className='bg-base-color relative md:truncate'> 
             <div>
                 <div className="footer-section1 hidden custom-min:hidden md:block"></div>
                 <div className="footer-section2 hidden custom-min:hidden md:block"></div>
@@ -55,7 +56,7 @@ function Footer() {
                             <Link className='hover:underline text-lg text-footer-color' to="/">Terms of Services</Link></span>
                     </div>
                 </div>
-                <p className='text-center text-xs text-footer-color pt-2'>Copyright © 2024 Premier Management Consultacy</p>
+                <p className='text-center text-sm text-dashboard-color pt-2'>Copyright © 2024 Premier Management Consultacy</p>
             </div>
         </footer>
     )
