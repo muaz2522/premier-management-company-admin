@@ -16,7 +16,7 @@ function Planning() {
                 <div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-base-color font-semibold ml-4'>Who We Are</h3>
-                        <h1 className='text-5xl font-semibold leading-tight custom-min:w-full py-4 ml-16'>Your trusted strategic <br /> planning Consulter</h1>
+                        <h1 className='text-4xl font-semibold leading-tight custom-min:w-full py-4 ml-16'>Your trusted strategic <br /> planning Consulter</h1>
                     </div>
                     <div className='flex flex-col items-end gap-4'>
                         <p className='w-[60%] text-text-color'>
@@ -60,7 +60,7 @@ function Planning() {
                     </div>
                 </div>
             </div>
-            <div className='bg-base-color px-16 py-12 grid sm:grid-cols-2 custom-min:grid-cols-1 place-items-center mt-16'>
+            <div className='bg-base-color px-16 py-8 grid sm:grid-cols-2 custom-min:grid-cols-1 place-items-center mt-16'>
                 <div className='sm:inline-block custom-min:flex custom-min:mb-4 sm:mb-0 justify-center '>
                     <img src={src} alt="growth" className='md:w-2/5 custom-min:w-2/4' />
                 </div>

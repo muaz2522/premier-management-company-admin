@@ -17,20 +17,20 @@ function Strategic() {
                 </div>
                 <div className='custom-md:px-12 grid md:grid-cols-4 sm:grid-cols-3 custom-md:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-y-2 custom-min:place-items-center custom-md:place-items-start md:gap-0'>
                     <div className='flex flex-col gap-4 border px-8 py-16 custom-min:items-center sm:items-start custom-min:w-3/4 custom-md:w-full'>
-                        <img src={src} alt="project management" className='w-[50px]' />
-                        <h3 className='font-medium text-2xl'>Project <br /> Management</h3>
+                        <img src={src} alt="project management" className='w-[55px]' />
+                        <h3 className='font-semibold text-2xl'>Project <br /> Management</h3>
                     </div>
                     <div className='flex flex-col gap-4 border px-8 py-16 custom-min:items-center sm:items-start custom-min:w-3/4 custom-md:w-full'>
-                        <img src={src1} alt="project management" className='w-[50px]' />
-                        <h3 className='font-medium text-2xl'>Legal <br /> Consultant</h3>
+                        <img src={src1} alt="project management" className='w-[55px]' />
+                        <h3 className='font-semibold text-2xl'>Legal <br /> Consultant</h3>
                     </div>
                     <div className='flex flex-col gap-4 border px-8 py-16 custom-min:items-center sm:items-start custom-min:w-3/4 custom-md:w-full'>
-                        <img src={src2} alt="project management" className='w-[50px]' />
-                        <h3 className='font-medium text-2xl'>Business <br /> Growth</h3>
+                        <img src={src2} alt="project management" className='w-[55px]' />
+                        <h3 className='font-semibold text-2xl'>Business <br /> Growth</h3>
                     </div>
                     <div className='flex flex-col gap-4 border px-8 py-16 custom-min:items-center sm:items-start custom-min:w-3/4 custom-md:w-full'>
-                        <img src={src3} alt="project management" className='w-[50px]' />
-                        <h3 className='font-medium text-2xl'>New Business <br /> Ideas</h3>
+                        <img src={src3} alt="project management" className='w-[55px]' />
+                        <h3 className='font-semibold text-2xl'>New Business <br /> Ideas</h3>
                     </div>
                 </div>
             </div>
@@ -39,15 +39,15 @@ function Strategic() {
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 md:gap-8 lg:gap-0 md:py-4 custom-min:pt-16'>
                     <div className='flex md:flex-col sm:flex-row custom-min:flex-col custom-min:gap-4 md:gap-0 items-center justify-end'>
                         <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 py-4 text-center text-base-color mb-4'>
-                            <h1 className='text-4xl font-extrabold mb-1'>900+</h1>
+                            <h1 className='text-4xl font-black mb-1'>900+</h1>
                             <h3 className='font-semibold text-lg'>Gave Advices</h3>
                         </div>
                         <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 p-4 text-center text-base-color mb-4'>
-                            <h1 className='text-4xl font-bold mb-1'>80</h1>
+                            <h1 className='text-4xl font-black mb-1'>80</h1>
                             <h3 className='font-semibold text-lg'>Happy Clients</h3>
                         </div>
                         <div className='bg-core-color custom-min:w-3/4 sm:w-full lg:w-11/12 p-4 text-center text-base-color mb-4'>
-                            <h1 className='text-4xl font-bold mb-1'>80</h1>
+                            <h1 className='text-4xl font-black mb-1'>80</h1>
                             <h3 className='font-semibold text-lg'>Completed Projects</h3>
                         </div>
                     </div>

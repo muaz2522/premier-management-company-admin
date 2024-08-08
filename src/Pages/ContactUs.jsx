@@ -22,7 +22,7 @@ function ContactUs() {
                     </div>
                 </div>
                 <div className="px-[20px] py-[30px] rounded bg-white">
-                    <h3 className="text-2xl mb-4">Contact Form</h3>
+                    <h3 className="text-2xl font-semibold mb-4">Contact Form</h3>
                     <ContactForm />
                 </div>
             </div>
@@ -66,7 +66,7 @@ function ContactForm() {
                 </div>
                 {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
             </div>
-            <Button type="submit" className="py-2 px-4">Contact Us</Button>
+            <Button type="submit" className="py-2 px-4">Get in Touch</Button>
         </form>
     );
 }

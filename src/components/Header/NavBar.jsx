@@ -7,7 +7,7 @@ function NavBar({ isOpen, setIsOpen }) {
   return (
     <nav className="flex items-center p-4 justify-between text-lg h-20 border-b border-slate-300">
       <div className="flex items-center gap-8">
-        <img className="w-44" src={src} alt="Premier" />
+        <img className="w-48" src={src} alt="Premier" />
         <div className='hidden custom-min:hidden sm:block'>
           <Menu />
         </div>

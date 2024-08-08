@@ -4,8 +4,9 @@ import Input from '../../ui/form/Input';
 import EmailInput from '../../ui/form/EmailInput';
 import { PasswordInput, ConfirmPasswordInput } from '../../ui/form/PasswordInput';
 import PhoneInput from '../../ui/form/PhoneInput';
-import Button from '../../ui/Button';
+// import Button from '../../ui/Button';
 import * as Icons from '../../assets/icons';
+import ButtonLink from '../../ui/ButtonLink';
 
 
 export default function SignUpForm() {
@@ -104,7 +105,8 @@ export default function SignUpForm() {
       </div>
 
 
-      <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button>
+      {/* <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button> */}
+      <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4" />
     </form>
   );
 }

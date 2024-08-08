@@ -3,7 +3,7 @@ import React from 'react';
 const PhoneInput = ({ register, errors, Icon, className, color }) => {
   return (
     <div className={`mb-8 ${className}`}>
-      <div className='flex border-b border-gray-300'>
+      <div className='flex border-b items-center border-gray-300'>
         {Icon && <Icon className="mr-2" />}
         <input
           id="phone"
@@ -15,7 +15,7 @@ const PhoneInput = ({ register, errors, Icon, className, color }) => {
               message: 'Phone number must be 10 digits'
             }
           })}
-          className={`text-base w-full ml-3 mb-2 outline-none ${color}`}
+          className={`text-base w-full ml-3 outline-none ${color}`}
           placeholder="Phone"
         />
       </div>
