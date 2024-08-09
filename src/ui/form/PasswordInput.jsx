@@ -26,7 +26,7 @@ const PasswordInput = ({ register, errors, className, Icon, classDiv }) => {
   );
 };
 
-const ConfirmPasswordInput = ({ register, errors, className, Icon }) => {
+const ConfirmPasswordInput = ({ register, errors, className, Icon,watch }) => {
   return (
     <div>
       <div className='flex border-b border-gray-300'>

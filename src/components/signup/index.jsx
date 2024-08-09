@@ -4,11 +4,11 @@ import Input from '../../ui/form/Input';
 import EmailInput from '../../ui/form/EmailInput';
 import { PasswordInput, ConfirmPasswordInput } from '../../ui/form/PasswordInput';
 import PhoneInput from '../../ui/form/PhoneInput';
-// import Button from '../../ui/Button';
+import Button from '../../ui/Button';
 import * as Icons from '../../assets/icons';
-import ButtonLink from '../../ui/ButtonLink';
+// import ButtonLink from '../../ui/ButtonLink';
 import { Link } from 'react-router-dom';
-
+import {createUser} from '../../api/userAuthentication';
 
 export default function SignUpForm() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -16,7 +16,11 @@ export default function SignUpForm() {
   const passwordValue = watch('password');
 
   const onSubmit = (data) => {
-    console.log(data);
+    const updatedData={
+      ...data,
+      password:passwordValue,
+    }
+    createUser(updatedData);
   }
 
   return (
@@ -46,8 +50,8 @@ export default function SignUpForm() {
       <EmailInput register={register} errors={errors} Icon={Icons.EmailIcon} className="mb-8" />
 
       <div className='grid md:grid-cols-2 lg:gap-0 mb-8 custom-min:grid-cols-1 custom-min:gap-8'>
-        <PasswordInput register={register} errors={errors} Icon={Icons.PasswordIcon} />
-        <ConfirmPasswordInput register={register} errors={errors}  Icon={Icons.PasswordIcon} />
+        <PasswordInput register={register} errors={errors} Icon={Icons.PasswordIcon}  />
+        <ConfirmPasswordInput register={register} errors={errors}  Icon={Icons.PasswordIcon} watch={watch} />
       </div>
 
       <PhoneInput register={register} errors={errors} Icon={Icons.PhoneIcon} />
@@ -66,7 +70,7 @@ export default function SignUpForm() {
         <Input
           register={register}
           errors={errors}
-          name="jobExp"
+          name="experience"
           text='Job experience is required'
           placeholder="Job Experience"
           className="w-full"
@@ -106,8 +110,8 @@ export default function SignUpForm() {
       </div>
 
 
-      {/* <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button> */}
-      <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4 text-white" classLink="text-white" />
+      <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button>
+      {/* <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4 text-white" classLink="text-white" /> */}
     </form>
   );
 }

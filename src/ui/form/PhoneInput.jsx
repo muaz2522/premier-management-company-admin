@@ -11,8 +11,8 @@ const PhoneInput = ({ register, errors, Icon, className, color }) => {
           {...register('phone', {
             required: 'Phone number is required',
             pattern: {
-              value: /^\d{10}$/,
-              message: 'Phone number must be 10 digits'
+              value: /^\d{11}$/,
+              message: 'Phone number must be 11 digits'
             }
           })}
           className={`text-lg w-full ml-3 outline-none ${color}`}

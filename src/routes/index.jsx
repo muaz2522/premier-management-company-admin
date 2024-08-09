@@ -14,6 +14,7 @@ import Dashboard from '../dashboard/pages';
 import EditProfile from '../dashboard/pages/EditProfile';
 import Account from "../dashboard/pages/Account";
 import LoginLayout from "../layout/LoginLayout";
+import {AuthRoute,IfLoginUser} from './AuthRoute';
 
 const routes = [
   {
@@ -44,7 +45,11 @@ const routes = [
     children: [
       {
         path: "login",
-        element: <Login />,
+        element: (
+          <IfLoginUser>
+            <Login />
+          </IfLoginUser>
+      ),
       },
       {
         path: "signUp",
@@ -66,7 +71,11 @@ const routes = [
   },
   {
     path: '/dashboard',
-    element: <DashboardLayout />,
+    element: (
+      <AuthRoute>
+        <DashboardLayout />
+      </AuthRoute>
+    ),
     children: [
       {
         path: "/dashboard",

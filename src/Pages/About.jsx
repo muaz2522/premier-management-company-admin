@@ -7,11 +7,11 @@ function About() {
     return (
         <section className='bg-ground-color'>
             <h2 className="text-4xl font-semibold text-center my-8  relative bg-white pb-16">About Us</h2>
-            <div className="grid sm:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-8 place-items-center custom-min:pt-8 sm:pt-16 lg:px-24 sm:gap-4 md:gap-16 lg:gap-48 h-full">
+            <div className="grid sm:grid-cols-2 custom-min:grid-cols-1 custom-min:gap-8 place-items-center custom-min:pt-8 sm:pt-16 lg:px-20 sm:gap-4 md:gap-16 lg:gap-48 h-full">
                 <img src={src1} alt="About Image" className='absolute left-[31rem] top-[20rem] w-[9%] opacity-90' />
-                <div className="flex gap-4 flex-col px-8 ">
+                <div className="flex gap-4 flex-col px-8 w-full">
                     <h3 className="text-xl font-semibold text-base-color custom-min:text-center sm:text-start">ABOUT US</h3>
-                    <h1 className="sm:text-3xl md:text-5xl leading-tight z-10 font-semibold" style={{lineHeight:"1.3"}}>Providing Consulting <br /> Services & Business <br />  Management</h1>
+                    <span className="sm:text-3xl md:text-5xl z-10 font-semibold" style={{lineHeight:"1.3"}}>Providing Consulting <br /> Services & Business <br />  Management</span>
                     <p className='text-lg text-text-color w-10/12 text-pretty'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit veritatis incidunt nihil quasi doloremque, laborum velit deleniti
                         nisi aliquid cum qui rem natus amet soluta quibusdam quod nihil molestias libero autem.
                         Consequuntur rerum nisi perspiciatis voluptate nobis iusto laborum ex?</p>
