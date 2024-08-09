@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import src from '../../assets/images/main-app-img.png';
 import Menu from "../login/Menu";
 import NavButton from "./NavButton";
@@ -7,7 +8,7 @@ function NavBar({ isOpen, setIsOpen }) {
   return (
     <nav className="flex items-center p-4 justify-between text-lg h-20 border-b border-slate-300">
       <div className="flex items-center gap-8">
-        <img className="w-48" src={src} alt="Premier" />
+        <NavLink to="/"><img className="w-48" src={src} alt="Premier" /></NavLink>
         <div className='hidden custom-min:hidden sm:block'>
           <Menu />
         </div>
