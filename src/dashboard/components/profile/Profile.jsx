@@ -1,7 +1,10 @@
 import src from '../../../assets/images/dashboard/profile-img.png'
 import cv from '../../../assets/images/dashboard/pdf.png'
+import { useAuth } from '../../../contextApi';
 
 function Profile() {
+    const auth=useAuth();
+    console.log(toString(auth.currentUser.experience))
     return (
         <div className="bg-ground-color">
             <section className="p-8 grid custom-min:grid-cols-1 md:grid-cols-[1.5fr_5fr] gap-4">
@@ -10,25 +13,24 @@ function Profile() {
                         <img src={src} alt='profile' className='custom-min:w-4/5' />
                     </div>
                     <div>
-                        <h2 className='text-2xl font-semibold text-base-color my-2'>John Doe</h2>
-                        <p className='text-dashboard-para'>johndeo@gmail.com</p>
-                        <p className='mt-2 text-dashboard-para'>+91 33 333 333</p>
+                        <h2 className='text-2xl font-semibold text-base-color my-2'>{auth.currentUser.firstName}</h2>
+                        <p className='text-dashboard-para'>{auth.currentUser.email}</p>
+                        <p className='mt-2 text-dashboard-para'>{auth.currentUser.phoneNo}</p>
                     </div>
                 </div>
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h3 className='text-base-color font-semibold text-lg'>About You</h3>
-                        <p className='text-dashboard-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nulla at sem iaculis iaculis. Ut eu elit sed augue fringilla faucibus eget et enim.
-                        </p>
+                        <p className='text-dashboard-para'>{auth.currentUser.about}</p>
                     </div>
                     <div className='grid custom-min:grid-cols-1 custom-md:grid-cols-2 md:gap-4 lg:grid-cols-3 pb-8'>
                         <div>
                             <h3 className='text-base-color font-semibold text-lg'>Job Title</h3>
-                            <p className='text-dashboard-para'>Software Engineer</p>
+                            <p className='text-dashboard-para'>{auth.currentUser.jobTitle}</p>
                         </div>
                         <div>
                             <h3 className='text-base-color font-semibold text-lg'>Job Experience</h3>
-                            <p className='text-dashboard-para'>4+ years</p>
+                            <p className='text-dashboard-para'>{(auth.currentUser.experience).toString()}+ years</p>
                         </div>
                         <div>
                             <h3 className='text-base-color font-semibold text-lg'>Your Curriculum Vitae
