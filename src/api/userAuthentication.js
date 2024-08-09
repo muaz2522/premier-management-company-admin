@@ -11,8 +11,7 @@ export function createUser(userInput) {
                 id: user.uid
             }
             AddUser(customUser)
-                // Signed up 
-                // ...
+            return user;
         })
         .catch((error) => {
             const errorCode = error.code;

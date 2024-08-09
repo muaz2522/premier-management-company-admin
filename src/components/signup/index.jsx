@@ -7,21 +7,33 @@ import PhoneInput from '../../ui/form/PhoneInput';
 import Button from '../../ui/Button';
 import * as Icons from '../../assets/icons';
 // import ButtonLink from '../../ui/ButtonLink';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {createUser} from '../../api/userAuthentication';
 
 export default function SignUpForm() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const navigate=useNavigate();
+  const { register, handleSubmit,reset, watch, formState: { errors } } = useForm();
 
   const passwordValue = watch('password');
 
-  const onSubmit = (data) => {
-    const updatedData={
-      ...data,
-      password:passwordValue,
+  const onSubmit = async (data) => {
+    try {
+      const updatedData = {
+        ...data,
+        password: passwordValue,
+      };
+  
+      const user = await createUser(updatedData);
+      console.log(user)
+      if(user){
+        navigate("/login")
+      }
+      reset();
+  
+    } catch (error) {
+      console.error('Error creating user:', error);
     }
-    createUser(updatedData);
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
