@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../../ui/form/Input';
 import EmailInput from '../../ui/form/EmailInput';
@@ -7,32 +7,24 @@ import PhoneInput from '../../ui/form/PhoneInput';
 import Button from '../../ui/Button';
 import * as Icons from '../../assets/icons';
 // import ButtonLink from '../../ui/ButtonLink';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import {createUser} from '../../api/userAuthentication';
 
 export default function SignUpForm() {
   const navigate=useNavigate();
+  const [isLoading,setIsLoading]=useState(false);
   const { register, handleSubmit,reset, watch, formState: { errors } } = useForm();
 
   const passwordValue = watch('password');
 
-  const onSubmit = async (data) => {
-    try {
+  const onSubmit = (data) => {
+
       const updatedData = {
         ...data,
         password: passwordValue,
       };
-  
-      const user = await createUser(updatedData);
-      console.log(user)
-      if(user){
-        navigate("/login")
-      }
-      reset();
-  
-    } catch (error) {
-      console.error('Error creating user:', error);
-    }
+      createUser(updatedData,navigate,setIsLoading);
+      // reset();
   };
 
   return (
@@ -122,7 +114,7 @@ export default function SignUpForm() {
       </div>
 
 
-      <Button type="submit" className="py-2 text-lg text-semibold px-4">Sign Up</Button>
+      <Button type="submit" className="py-2 text-lg text-semibold px-4">{`${isLoading ?"Loading":"Sign Up"}`}</Button>
       {/* <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4 text-white" classLink="text-white" /> */}
     </form>
   );

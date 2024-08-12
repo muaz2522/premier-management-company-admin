@@ -13,10 +13,8 @@ export default function LoginForm() {
   const auth=useAuth();
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = async(data) => {
+  const onSubmit = (data) => {
     SignInUser(data);
-    console.log(auth.loading)
-    console.log("Muaz-> ",auth.currentUser);
   };
 
   return (

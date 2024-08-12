@@ -2,7 +2,8 @@ import { createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } f
 import { auth } from '../config/firebase.config';
 import { AddUser } from "./getUserDetails";
 
-export function createUser(userInput) {
+export function createUser(userInput, navigate) {
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, userInput.email, userInput.password)
         .then((userCredential) => {
             const user = userCredential.user;
@@ -11,7 +12,8 @@ export function createUser(userInput) {
                 id: user.uid
             }
             AddUser(customUser)
-            return user;
+            navigate("/dashboard");
+            setIsLoading(false);
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -21,10 +23,8 @@ export function createUser(userInput) {
 }
 
 export function SignInUser({ email, password }) {
-
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            // Signed in 
             const user = userCredential.user;
             return user;
         })

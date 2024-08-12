@@ -13,7 +13,7 @@ function Profile() {
                         <img src={src} alt='profile' className='custom-min:w-4/5' />
                     </div>
                     <div>
-                        <h2 className='text-2xl font-semibold text-base-color my-2'>{auth.currentUser.firstName}</h2>
+                        <h2 className='text-2xl font-semibold text-base-color my-2'>{auth.currentUser.firstName} {auth.currentUser.lastName}</h2>
                         <p className='text-dashboard-para'>{auth.currentUser.email}</p>
                         <p className='mt-2 text-dashboard-para'>{auth.currentUser.phoneNo}</p>
                     </div>
@@ -30,14 +30,14 @@ function Profile() {
                         </div>
                         <div>
                             <h3 className='text-base-color font-semibold text-lg'>Job Experience</h3>
-                            <p className='text-dashboard-para'>{(auth.currentUser.experience).toString()}+ years</p>
-                        </div>
+                            <p className='text-dashboard-para'>{`${auth.currentUser.experience}+ years`}</p>
+                            </div>
                         <div>
                             <h3 className='text-base-color font-semibold text-lg'>Your Curriculum Vitae
                             </h3>
                             <div className='flex gap-4'>
                                 <img src={cv} alt="cv" className='w-8' />
-                                <span className='text-dashboard-para'>john_cv.pdf</span>
+                                <span className='text-dashboard-para'>{auth.currentUser.resumeFileName}</span>
                             </div>
                         </div>
                     </div>
