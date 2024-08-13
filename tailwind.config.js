@@ -23,9 +23,6 @@ export default {
                 'dashboard-color': "#E0E1F4",
 
             },
-            fontFamily: {
-                'colona': ['"Colona MT"', 'sans-serif'],
-            },
         },
     },
     plugins: [],

@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } f
 import { auth } from '../config/firebase.config';
 import { AddUser } from "./getUserDetails";
 
-export function createUser(userInput, navigate) {
+export function createUser(userInput, navigate, setIsLoading) {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, userInput.email, userInput.password)
         .then((userCredential) => {

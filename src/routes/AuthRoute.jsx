@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
-import {useAuth} from '../contextApi';
+import { useAuth } from '../contextApi';
+
 
 export function AuthRoute({ children }) {
   const auth = useAuth();
@@ -8,12 +9,32 @@ export function AuthRoute({ children }) {
     return (
       <Loading
         loading
-        background="rgb(241 ,245 ,249)"   
-        loaderColor=" rgb(132, 204, 22)"
+        background="rgb(241 ,245 ,249)"
+        loaderColor="#383C6C"
       />
     );
 
-  return auth.currentUser ? children : <Navigate to={"/login"} />;
+  if (!auth.currentUser) return <Navigate to="/login" />;
+  if (auth.currentUser.role === "admin") return <Navigate to="/admin" />;
+
+  return children;
+}
+
+export function AdminAuthRoute({ children }) {
+  const auth = useAuth();
+
+  if (auth.loading)
+    return (
+      <Loading
+        loading
+        background="rgb(241 ,245 ,249)"
+        loaderColor="#383C6C"
+      />
+    );
+
+  if (!auth.currentUser || auth.currentUser.role !== "admin") return <Navigate to="/login" />;
+
+  return children;
 }
 
 export function IfLoginUser({ children }) {
@@ -28,5 +49,8 @@ export function IfLoginUser({ children }) {
       />
     );
 
-  return auth.currentUser ? <Navigate to="/dashboard" /> : children;
+  return auth.currentUser ? (
+    auth.currentUser.role === "admin" ? <Navigate to="/admin" /> :
+      <Navigate to="/dashboard" />
+  ) : children;
 }

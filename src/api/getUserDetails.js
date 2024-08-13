@@ -1,4 +1,4 @@
-import { doc, setDoc, getDoc, Timestamp } from "firebase/firestore";
+import { doc, setDoc, getDoc, Timestamp, getDocs, collection } from "firebase/firestore";
 import { db } from '../config/firebase.config';
 import * as Constants from '../constants';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
@@ -41,14 +41,33 @@ export async function AddUser(user) {
     await setDoc(doc(db, "users", id), NewUser);
 }
 
+export async function getAllUsers() {
+    const userCol = collection(db, "users");
+    const userSnapshot = await getDocs(userCol);
+
+    const userList = userSnapshot.docs
+        .filter(doc => doc.data().role !== "admin")
+        .map(doc => ({
+            // id: doc.id,
+            ...doc.data()
+        }));
+
+    if (userList.length > 0) {
+        return userList;
+    } else {
+        throw new Error("No User found!");
+    }
+}
+
 export async function getUser(id) {
     const docRef = doc(db, "users", id);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-        return docSnap.data();
+        const userData = docSnap.data();
+        return userData;
     } else {
-        return ("No Such Document Found");
+        return "No Such Document Found";
     }
 }
 

@@ -4,7 +4,8 @@ import { useAuth } from '../../../contextApi';
 
 function Profile() {
     const auth=useAuth();
-    console.log(toString(auth.currentUser.experience))
+    console.log(toString(auth.currentUser))
+    
     return (
         <div className="bg-ground-color">
             <section className="p-8 grid custom-min:grid-cols-1 md:grid-cols-[1.5fr_5fr] gap-4">

@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
       <Loading
         loading
         background="rgb(241 ,245 ,249)"
-        loaderColor=" rgb(132, 204, 22)"
+        loaderColor="#383C6C"
       />
     );
   }
