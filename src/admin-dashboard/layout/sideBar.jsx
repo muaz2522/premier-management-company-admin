@@ -54,14 +54,14 @@ function ListItem({ item }) {
             to={item.link}
             end={item.link === ADMIN_ROUTES.HOME} // Ensure exact matching for home
             className={({ isActive }) =>
-                `flex items-center gap-4 text-lg font-medium py-2 pl-3 px-20 mb-1 rounded ${
+                `flex items-center gap-4 text-lg font-medium text-black hover:text-black py-2 pl-3 px-20 mb-1 rounded ${
                     isActive ? 'bg-ground-color' : 'hover:bg-ground-color'
                 }`
             }
         >
             <li className="flex items-center gap-4 w-full">
-                <span>{item.icon}</span>
-                <span className="font-semibold">{item.name}</span>
+                <span className="text-black">{item.icon}</span>
+                <span className="font-semibold text-black">{item.name}</span>
             </li>
         </NavLink>
     );

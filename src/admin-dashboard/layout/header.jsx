@@ -16,11 +16,11 @@ function Header() {
     return (
         <header className="flex items-center justify-end gap-8 py-3 px-4 text-lg">
             <img src={src} className="w-10 h-10 rounded-full" />
-            <span className="text-base-color">{currentUser.firstName} {currentUser.lastName}</span>
-            <NavLink link="/admin/profile" className="hover:text-base-color">
-            <FaUser size="1.2em" color="base-color" />
+            <span className="text-base-color font-medium">{currentUser.firstName} {currentUser.lastName}</span>
+            <NavLink link="/admin/profile" className="text-base-color hover:text-base-color">
+            <FaUser size="1.2em" color="#383C6C" />
             </NavLink>
-            <MdLogout size="1.2em" color="base-color" className="cursor-pointer" onClick={logOut}/>
+            <MdLogout size="1.2em" color="#383C6C" className="cursor-pointer" onClick={logOut}/>
         </header>
     )
 }
