@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import EmailInput from '../../ui/form/EmailInput';
-import { PasswordInput } from '../../ui/form/PasswordInput';
-import Button from '../../ui/Button';
-import * as Icons from '../../assets/icons';
-import { Link } from 'react-router-dom';
-// import ButtonLink from '../../ui/ButtonLink';
-import {SignInUser} from '../../api/userAuthentication';
-// import { useAuth } from '../../contextApi';
+import EmailInput from '../../../ui/form/EmailInput';
+import { PasswordInput } from '../../../ui/form/PasswordInput';
+import Button from '../../../ui/Button';
+import * as Icons from '../../../assets/icons';
+import { Link, useNavigate } from 'react-router-dom';
+import {SignInUser} from '../../../api/userAuthentication';
 
 export default function LoginForm() {
   const [isLoading,setIsLoading]=useState(false);
-  // const auth=useAuth();
+  const navigate=useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     setIsLoading(true);
-    SignInUser(data,setIsLoading);
+    SignInUser(data,setIsLoading,navigate);
   };
 
   return (

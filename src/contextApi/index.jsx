@@ -2,13 +2,13 @@ import { createContext, useState, useEffect, useContext } from "react";
 import { auth } from "../config/firebase.config";
 import Loading from "react-fullscreen-loading";
 import {getUser} from '../api/getUserDetails'
+import { useNavigate } from "react-router-dom";
 
 const AuthenticateContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  // const [error,setError]=useState(false);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {

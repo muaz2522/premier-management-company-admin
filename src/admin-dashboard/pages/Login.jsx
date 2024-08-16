@@ -1,5 +1,5 @@
-import LoginForm from '../components/login';
-import ButtonLink from '../ui/ButtonLink';
+import LoginForm from '../components/login'
+import ButtonLink from '../../ui/ButtonLink'
 
 function Login() {
   return (
