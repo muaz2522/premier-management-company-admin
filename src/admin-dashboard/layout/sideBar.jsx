@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { IoHomeOutline, IoSettingsOutline } from "react-icons/io5";
 import { ADMIN_ROUTES } from '../../constants';
 import { FiUsers, FiUserPlus } from "react-icons/fi";
+import { BsFilePost } from "react-icons/bs";
 import src from '../../assets/images/main-app-img.png';
 
 // Sidebar data
@@ -16,16 +17,16 @@ const data = [
         link: ADMIN_ROUTES.USERS,
         icon: <FiUsers size='1.2em' />,
     },
-    // {
-    //     name: "Add User",
-    //     link: ADMIN_ROUTES.NEW_USER,
-    //     icon: <FiUserPlus size='1.2em' />,
-    // },
-    // {
-    //     name: "Users",
-    //     link: ADMIN_ROUTES.USERS,
-    //     icon: <IoHomeOutline size='1.2em' />,
-    // },
+    {
+        name: "Posts",
+        link: ADMIN_ROUTES.POSTS,
+        icon: <BsFilePost size='1.2em' />,
+    },
+    {
+        name: "Add Admin",
+        link: ADMIN_ROUTES.CREATE_ADMIN,
+        icon: <FiUserPlus size='1.2em' />,
+    },
     {
         name: "Settings",
         link: ADMIN_ROUTES.SETTINGS,

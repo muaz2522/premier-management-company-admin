@@ -113,8 +113,7 @@ export default function SignUpForm() {
         {errors.isAgree && <span className="text-red-500">{errors.isAgree.message}</span>}
       </div>
 
-
-      <Button type="submit" className="py-2 text-lg text-semibold px-4">{`${isLoading ?"Loading":"Sign Up"}`}</Button>
+      <Button type="submit" disabled={isLoading} className="py-2 text-lg text-semibold px-4">{`${isLoading ?"Loading...":"Sign Up"}`}</Button>
       {/* <ButtonLink link="/verify" text="Sign Up" className="py-2 px-4 text-white" classLink="text-white" /> */}
     </form>
   );

@@ -1,6 +1,11 @@
 import React from 'react';
 
 const PhoneInput = ({ register, errors, Icon, className, color }) => {
+  // Function to count digits in the input value
+  const countDigits = (value) => {
+    return (value.match(/\d/g) || []).length; 
+  };
+
   return (
     <div className={`mb-8 ${className}`}>
       <div className='flex border-b items-center border-gray-300'>
@@ -10,9 +15,9 @@ const PhoneInput = ({ register, errors, Icon, className, color }) => {
           type="tel"
           {...register('phone', {
             required: 'Phone number is required',
-            pattern: {
-              value: /^\d{11}$/,
-              message: 'Phone number must be 11 digits'
+            validate: value => {
+              const digitCount = countDigits(value);
+              return digitCount >= 11 || 'Phone number must contain at least 11 digits';
             }
           })}
           className={`text-lg w-full ml-3 outline-none ${color}`}

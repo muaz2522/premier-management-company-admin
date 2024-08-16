@@ -15,7 +15,7 @@ function Link({ className, isOpen }) {
                         end
                         className={({ isActive }) => {
                             "text-xl"
-                            `text-xl ${isActive ? "!text-slate-300" : "!text-black"}`
+                            `text-xl ${isActive ? "!text-black" : "!text-slate-300"}`
                         }}
                     >
                         Community
@@ -26,7 +26,7 @@ function Link({ className, isOpen }) {
                     end
                     className={({ isActive }) => {
                         
-                        return isActive ? "!text-slate-300" : "!text-black";
+                        return isActive ?"!text-black" :  "!text-slate-300";
                     }}
                 >
                     Community
@@ -50,7 +50,7 @@ function Link({ className, isOpen }) {
                     style={{fontSize:"14px"}}
                     className={({ isActive }) => {
 
-                        return isActive ? "!text-slate-300" : "!text-black";
+                        return isActive ? "!text-black" : "!text-slate-300";
                     }}
                 >
                     My Account

@@ -4,7 +4,7 @@ import Header from "./header"
 
 function AdminLayout() { 
     return (
-        <div className="grid grid-cols-[17rem_1fr]">
+        <div className="grid grid-cols-[18rem_1fr]">
             <SideBar />
             <section>
                 <Header />

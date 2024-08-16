@@ -20,6 +20,9 @@ import AdminHome from '../admin-dashboard/pages/Home'
 import Users from '../admin-dashboard/pages/users'
 import AdminProfile from '../admin-dashboard/pages/AdminProfile'
 import Settings from "../admin-dashboard/pages/settings"
+import CreateAdmin from '../admin-dashboard/pages/createAdmin'
+import CreatePost from '../admin-dashboard/pages/post'
+
 
 const routes = [
   {
@@ -60,6 +63,8 @@ const routes = [
       { path: "users", element: <Users /> },
       { path: "profile", element: <AdminProfile /> },
       { path: "settings", element: <Settings /> },
+      { path: "create-admin", element: <CreateAdmin /> },
+      { path: "posts", element: <CreatePost /> },
     ],
   },
 ];
