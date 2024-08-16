@@ -14,6 +14,7 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (user) {
         const data = await getUser(user.uid);
+        // console.log(data);
         setCurrentUser(data);
       } else {
         setCurrentUser(null);
