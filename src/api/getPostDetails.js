@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs, setDoc, Timestamp } from "firebase/firestore"
+import { addDoc, collection, doc, getDocs, deleteDoc, updateDoc, Timestamp } from "firebase/firestore"
 import { DB_COLLECTIONS, DB_STORAGE } from '../constants'
 import { db } from '../config/firebase.config'
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
@@ -11,23 +11,27 @@ export async function createPost(post) {
             title,
             content,
             creatorId,
-            imageUrl,
+            uImage,
             postImg
         } = post;
 
-        const imgUrl = await uploadPost(postImg[0]);
+        const imgUrl = postImg.length > 0 ? await uploadPost(postImg[0]) : null;
 
         const newPost = {
             title,
             content,
             creatorId,
-            uImage: imageUrl,
+            uImage,
             imgUrl,
             updatedAt: Timestamp.fromDate(new Date()),
             createdAt: Timestamp.fromDate(new Date()),
         }
 
-        await addDoc(collection(db, DB_COLLECTIONS.POSTS), newPost);
+        const docRef = await addDoc(collection(db, DB_COLLECTIONS.POSTS), newPost);
+        await updateDoc(doc(db, DB_COLLECTIONS.POSTS, docRef.id), {
+            id: docRef.id
+        });
+
         toast.success("Post successfully created");
     } catch (err) {
         toast.error(`Post not created: ${err.message}`);
@@ -50,6 +54,28 @@ export async function getAllPosts() {
         }
     } catch (error) {
         toast.error(`posts not found ${error.message}`)
+    }
+}
+
+export async function deletePost(id) {
+    try {
+        await deleteDoc(doc(db, DB_COLLECTIONS.POSTS, id));
+        toast.success(`post deleted successfully`)
+
+    } catch (err) {
+        toast.error(`${err.message}`)
+    }
+}
+
+export async function updatePost(id, data) {
+    try {
+        const postRef = doc(db, DB_COLLECTIONS.POSTS, id);
+        await updateDoc(postRef, {
+            ...data
+        });
+        toast.success("Successfully update document")
+    } catch (err) {
+        toast.error(err.message)
     }
 }
 

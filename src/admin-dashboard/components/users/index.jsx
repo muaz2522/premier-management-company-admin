@@ -10,7 +10,7 @@ function User({user}) {
                         <BreadCrumb to="/admin/users" text="Users" />
                     </div>
                     <div className="text-lg py-8">
-                        <header className="grid grid-cols-[1.5fr_1.5fr_2.5fr_1.2fr_1.2fr_1.2fr] p-4 border">
+                        <header className="grid grid-cols-[1.5fr_1.5fr_2.5fr_1.2fr_1.2fr_1.2fr] text-xl p-4 border">
                             <div className="font-semibold">image</div>
                             <div className="font-semibold">name</div>
                             <div className="font-semibold">email</div>

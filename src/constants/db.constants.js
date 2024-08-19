@@ -10,8 +10,9 @@ export const DB_STORAGE = {
 }
 
 export const USER_COLLECTION = {
-    STATUS: "active",
-    ROLE: "HR"
+    STATUS_ACTIVE: "active",
+    STATUS_BLOCK: "block",
+    ROLE: "admin"
 }
 
 export const ADMIN_ROUTES = {

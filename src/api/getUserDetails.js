@@ -6,7 +6,6 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import { storageRef as storage } from "../config/firebaseStorage.config"
 import toast from "react-hot-toast"
 
-// Add a new document in collection "cities"
 export async function AddUser(user) {
     try {
         const {
@@ -14,29 +13,17 @@ export async function AddUser(user) {
             email,
             firstName,
             lastName,
-            phone,
-            experience,
-            jobTitle,
-            about,
-            cv,
         } = user;
-
-        const resumeUrl = await uploadCv(cv[0]);
 
         const NewUser = {
             id,
             email,
             firstName,
             lastName,
-            phoneNo: phone,
+            phoneNo: null,
             imageUrl: null,
-            resumeUrl: resumeUrl,
-            resumeFileName: cv[0].name,
             role: Constants.USER_COLLECTION.ROLE,
-            accountStatus: Constants.USER_COLLECTION.STATUS,
-            experience: Number(experience),
-            jobTitle,
-            about,
+            accountStatus: Constants.USER_COLLECTION.STATUS_ACTIVE,
             updatedAt: Timestamp.fromDate(new Date()),
             createdAt: Timestamp.fromDate(new Date()),
         };
@@ -62,10 +49,10 @@ export async function getAllUsers() {
         if (userList.length > 0) {
             return userList;
         } else {
-            throw new Error("No User found!");
+            throw new Error("No Admin found!");
         }
     } catch (error) {
-        toast.error(`users not found ${error.message}`)
+        toast.error(`Admin not found ${error.message}`)
     }
 }
 
@@ -78,14 +65,14 @@ export async function getUser(id) {
             const userData = docSnap.data();
             return userData;
         } else {
-            return "No Such user Found";
+            return "No Such Admin Found";
         }
     } catch (error) {
-        toast.error(`user not found ${error.message}`)
+        toast.error(`Admin not found ${error.message}`)
     }
 }
 
-export async function uploadCv(file) {
+export async function uploadImg(file) {
 
     const storageRefInstance = ref(storage, `${DB_STORAGE.RESUME}/${file.name}`);
     await uploadBytes(storageRefInstance, file);

@@ -11,7 +11,7 @@ function UserModal({ user,setIsModal }) {
 
     return (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-            <div className="bg-white w-full max-w-md rounded-lg shadow-lg p-6">
+            <div className="bg-white w-full max-w-lg rounded-lg shadow-lg text-xl p-6">
                 <div className="flex flex-col items-center">
                     <img
                         src={user.imageUrl ? user.imageUrl : src}
