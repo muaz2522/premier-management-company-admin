@@ -5,7 +5,6 @@ import UserModal from './userModal';
 
 function UserList({ user }) {
     const [isModal, setIsModal] = useState(false);
-    console.log(isModal)
     return (
         <>
             <div className="grid grid-cols-[1.5fr_1.5fr_2.5fr_1.2fr_1.2fr_1.2fr] text-xl bg-white px-2 py-3 border">
