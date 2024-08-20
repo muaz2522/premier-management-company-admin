@@ -28,7 +28,7 @@ export function SignInUser({ email, password }, setIsLoading, navigate) {
         .then((userCredential) => {
             const user = userCredential.user;
             setIsLoading(false)
-            navigate("/admin")
+                // navigate("/admin")
             return user;
         })
         .catch((error) => {

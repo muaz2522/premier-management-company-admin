@@ -16,8 +16,8 @@ export const USER_COLLECTION = {
 }
 
 export const ADMIN_ROUTES = {
-    HOME: "/admin",
-    USERS: "/admin/users",
+    // HOME: "/admin",
+    USERS: "/admin",
     NEW_USER: "/admin/users",
     PROFILE: "/admin/profile",
     POSTS: "/admin/posts",

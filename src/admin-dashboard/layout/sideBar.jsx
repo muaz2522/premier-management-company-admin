@@ -7,11 +7,11 @@ import src from '../../assets/images/main-app-img.png';
 
 // Sidebar data
 const data = [
-    {
-        name: "Home",
-        link: ADMIN_ROUTES.HOME,
-        icon: <IoHomeOutline size='1.2em' />,
-    },
+    // {
+    //     name: "Home",
+    //     link: ADMIN_ROUTES.HOME,
+    //     icon: <IoHomeOutline size='1.2em' />,
+    // },
     {
         name: "Users",
         link: ADMIN_ROUTES.USERS,
@@ -22,16 +22,16 @@ const data = [
         link: ADMIN_ROUTES.POSTS,
         icon: <BsFilePost size='1.2em' />,
     },
-    {
-        name: "Add Admin",
-        link: ADMIN_ROUTES.CREATE_ADMIN,
-        icon: <FiUserPlus size='1.2em' />,
-    },
-    {
-        name: "Settings",
-        link: ADMIN_ROUTES.SETTINGS,
-        icon: <IoSettingsOutline size='1.2em' />,
-    },
+    // {
+    //     name: "Add Admin",
+    //     link: ADMIN_ROUTES.CREATE_ADMIN,
+    //     icon: <FiUserPlus size='1.2em' />,
+    // },
+    // {
+    //     name: "Settings",
+    //     link: ADMIN_ROUTES.SETTINGS,
+    //     icon: <IoSettingsOutline size='1.2em' />,
+    // },
 ];
 
 export default function SideBar() {
@@ -53,7 +53,7 @@ function ListItem({ item }) {
     return (
         <NavLink
             to={item.link}
-            end={item.link === ADMIN_ROUTES.HOME} // Ensure exact matching for home
+            end={item.link === ADMIN_ROUTES.USERS} // Ensure exact matching for home
             className={({ isActive }) =>
                 `flex items-center gap-4 text-lg font-medium text-black hover:text-black py-2 pl-3 px-20 mb-1 rounded ${
                     isActive ? 'bg-ground-color' : 'hover:bg-ground-color'

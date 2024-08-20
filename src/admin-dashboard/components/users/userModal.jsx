@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom"
 import { useState,useEffect } from 'react'
 import { formatDate } from '../../../helpers'
 
+
 function UserModal({ user,setIsModal }) {
     const createdAt = user.createdAt ? formatDate(user.createdAt) : "No date available";
     const updatedAt = user.createdAt ? formatDate(user.createdAt) : "No date available";
-
 
     return (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
@@ -16,7 +16,7 @@ function UserModal({ user,setIsModal }) {
                     <img
                         src={user.imageUrl ? user.imageUrl : src}
                         alt="User Avatar"
-                        className="w-24 h-24 rounded-full object-cover mb-4"
+                        className="w-24 h-24 rounded-full object-contain shadow-sm mb-4"
                     />
                     <h2 className="text-xl font-semibold text-gray-800">{user.firstName} {user.lastName}</h2>
                 </div>

@@ -63,7 +63,12 @@ export async function getUser(id) {
 
         if (docSnap.exists()) {
             const userData = docSnap.data();
-            return userData;
+            if (userData.role === "admin") {
+                return userData;
+            } else {
+                toast.error("no user found");
+                return null;
+            }
         } else {
             return "No Such Admin Found";
         }
@@ -71,6 +76,7 @@ export async function getUser(id) {
         toast.error(`Admin not found ${error.message}`)
     }
 }
+
 
 export async function uploadImg(file) {
 
