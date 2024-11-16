@@ -1,6 +1,7 @@
 import LoginForm from '../components/login'
 
 
+
 function Login() {
   return (
     <section className='min-h-lvh bg-ground-color pb-8'>
@@ -11,7 +12,7 @@ function Login() {
 
           Our mission is to not leave anyone behind. With a dream of a prosperous Kingdom, PMC is bringing positive change across all communities.<br/> Give your people a better chance at success. Adapt to a forward-thinking approach where resilience, inclusion and sustainability define your enduring impact.</p>
          
-          {/* <ButtonLink link="/signUp" text="Create Account" className="py-2 px-4" classLink="hover:text-footer-color text-white" /> */}
+       
         </div>
 
         <div className="px-8 py-12 rounded bg-white custom-min:w-full custom-md:w-3/5 sm:w-3/5 md:w-3/4 lg:w-2/4">

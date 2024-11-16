@@ -21,9 +21,9 @@ export default function Post({ posts=[] }) {
                 </div>
                 <div className="text-lg py-8">
                     <header className="grid grid-cols-[1.5fr_2fr_3fr_1fr] text-xl py-4 px-2 border">
-                        <div className="font-semibold">image</div>
+                        <div className="font-semibold">Image</div>
                         <div className="font-semibold">Heading</div>
-                        <div className="font-semibold">content</div>
+                        <div className="font-semibold">Content</div>
                         <div className="font-semibold">Action</div>
                     </header>
                     {/* <section> */}

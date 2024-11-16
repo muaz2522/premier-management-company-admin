@@ -23,7 +23,7 @@ const routes = [
       { path: "", element: <Users /> },
       { path: "profile", element: <AdminProfile /> },
       // { path: "settings", element: <Settings /> },
-      // { path: "create-admin", element: <CreateAdmin /> },
+      //  { path: "create-admin", element: <CreateAdmin /> },
       { path: "posts", element: <CreatePost /> },
       { path: "*", element: <PageNotFound /> },
     ],
